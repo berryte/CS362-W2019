@@ -650,7 +650,7 @@ void playAdventurer(struct gameState *state, int currentPlayer, int temphand[]){
       int z = 0; //counter for tempHand.  Initialize to 0
       int cardDrawn;
 
-      while(drawntreasure<2){
+      while(drawntreasure<3){ //changed to 3 from 2 for subtle bug
         if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
           shuffle(currentPlayer, state);
         }
@@ -677,18 +677,18 @@ void playSmithy(struct gameState *state, int handPos, int currentPlayer){
 		drawCard(currentPlayer, state);
 	}
 	//discard card from hand
-	discardCard(handPos, currentPlayer, state, 0);
+	//discardCard(handPos, currentPlayer, state, 0);  do not discard smithy for subtle bug
 }
 
 //Play Council Room card - draw 4 cards, increase buy power and everyone draws a card
 void playCRoom(struct gameState *state, int currentPlayer, int handPos){
 	//+4 Cards
 	int i;
-	for (i = 0; i < 4; i++){
+	for (i = 0; i < 4; i++){ 
 		drawCard(currentPlayer, state);
 	}
 	//+1 Buy
-	state->numBuys++;
+	state->numBuys--; //change to decrement instead of increment for subtle bug
 	//Each other player draws a card
 	for (i = 0; i < state->numPlayers; i++){
 		if ( i != currentPlayer ){
@@ -701,8 +701,8 @@ void playCRoom(struct gameState *state, int currentPlayer, int handPos){
 
 //Play Mine card - exchange an inferior treasure card for the next one up
 int playMine(struct gameState *state, int choice1, int choice2, int currentPlayer, int handPos){
-	int j;
-	j = state->hand[currentPlayer][choice1];  //store card we will trash
+	//int j;
+	//j = state->hand[currentPlayer][choice1];  //store card we will trash
 	if (state->hand[currentPlayer][choice1] < copper || state->hand[currentPlayer][choice1] > gold){
 		return -1; //error
 	}
@@ -716,13 +716,13 @@ int playMine(struct gameState *state, int choice1, int choice2, int currentPlaye
 	//discard card from hand
 	discardCard(handPos, currentPlayer, state, 0);
 	//discard trashed card
-	int i;
+	/*int i;
 	for (i = 0; i < state->handCount[currentPlayer]; i++){
 		if (state->hand[currentPlayer][i] == j){
 			discardCard(i, currentPlayer, state, 0);
 			return 0;
 		}
-	}
+	}  subtle bug to not trash card*/
 	return 0;
 }
 
