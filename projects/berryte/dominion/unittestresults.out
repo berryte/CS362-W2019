@@ -1,0 +1,194 @@
+Running Test Suite on Dominion...
+
+
+------------ Testing InitializeGame Function -------------
+
+
+Test 1: Number of Players
+Testing -5 Players
+Test Pass
+
+Testing 0 Players
+Test Pass
+
+Testing 1 Player
+Test Pass
+
+Testing 2 Players
+Test Pass
+
+Testing 3 Players
+Test Pass
+
+Testing 4 Players
+Test Pass
+
+Testing 5 Players
+Test Pass
+
+Test 2: Dominion cards
+Testing with Duplicate Cards
+Test Pass
+
+Test 3: Seed Testing
+Testing with Negative Seed
+Bug Found
+
+--- Testing Complete for InitializeGame Function ---
+
+File 'dominion.c'
+Lines executed:16.78% of 566
+Creating 'dominion.c.gcov'
+
+
+------------ Testing isGameOver Function -------------
+
+
+Test 1: Negative Province Count
+Bug Found
+
+Test 2: Zero Province Count
+Test Pass
+
+Test 3: Supplies are above 0
+Test Pass
+
+Test 4: 3 Supplies are under 0
+Bug Found
+
+Test 5: 3 Supplies are at 0
+Test Pass
+
+--- Testing Complete for isGameOver Function ---
+
+File 'dominion.c'
+Lines executed:17.14% of 566
+Creating 'dominion.c.gcov'
+
+
+------------ Testing getCost Function -------------
+
+
+Test 1: Negative Number
+Test Pass
+
+Test 2: Copper Card
+Test Pass
+
+Test 3: High Positive Number
+Test Pass
+
+--- Testing Complete for getCost Function ---
+
+File 'dominion.c'
+Lines executed:0.71% of 566
+Creating 'dominion.c.gcov'
+
+
+------------ Testing UpdateCoins Function -------------
+
+
+Test 1: Negative Bonus
+Bug Found
+
+Test 2: Play Copper + Bonus of 2
+Test Pass
+
+Test 3: Play Gold Without Bonus
+Test Pass
+
+--- Testing Complete for UpdateCoins Function ---
+
+File 'dominion.c'
+Lines executed:15.55% of 566
+Creating 'dominion.c.gcov'
+
+
+------------ Testing Adventurer Card Function -------------
+
+Test 1: Verify 2 Cards Added to Hand and Removed from Deck
+Previous Deck:5  Post Deck:2
+Previous Hand:5 Post Hand:8
+Bug Found
+
+Test 2: 2 Treasure Cards Added to Hand
+Treasure Cards in Hand before Adventurer: 4
+Treasure Cards in Hand after Adventurer: 7
+Treasure Cards in Deck before Adventurer: 3
+Treasure Cards in Deck after Adventurer: 0
+Bug Found
+
+Test 3: No Change if No Treasure is Deck
+Treasure Cards in Hand before Adventurer: 7
+Treasure Cards in Hand after Adventurer: 7
+Treasure Cards in Deck before Adventurer: 0
+Treasure Cards in Deck after Adventurer: 0
+Test Pass
+
+------------ Finished Testing Adventurer Card Function -------------
+File 'dominion.c'
+Lines executed:20.14% of 566
+Creating 'dominion.c.gcov'
+
+
+------------ Testing Smithy Card Function -------------
+
+Test 1: Verify that only 3 Cards were Drawn
+Test Pass
+
+Test 2: Discard to Increment by 1
+Bug Found
+
+Test 3: Verify Smithy is Discarded
+Bug Found
+
+------------ Finished Testing Smithy Card Function -------------
+File 'dominion.c'
+Lines executed:17.84% of 566
+Creating 'dominion.c.gcov'
+
+
+------------ Testing Council Room Card Function -------------
+
+Test 1: Verify that only 4 Cards were Drawn
+Test Pass
+
+Test 2: Verify Council Room was Discarded and Hand Count + 3
+Bug Found
+
+Test 3: Number of Buys + 1
+Bug Found
+
+Test 4: All Other Players + 1 Card
+Test Pass
+
+------------ Finished Testing Council Room Card Function -------------
+File 'dominion.c'
+Lines executed:18.90% of 566
+Creating 'dominion.c.gcov'
+
+
+------------ Testing Mine Card Function -------------
+
+Test 1: Verify that Mine is Discarded
+Bug Found
+
+Test 2: Verify that Card is Trashed
+Bug Found
+
+Test 3: Choice 1 Not in Hand
+Test Pass
+
+Test 4: Exchange Estate -> Gold
+Test Pass
+
+Test 5: Exchange Copper -> Gold
+Bug found
+
+------------ Finished Testing Mine Card Function -------------
+File 'dominion.c'
+Lines executed:21.38% of 566
+Creating 'dominion.c.gcov'
+
+End Test Suite on Dominion
+
