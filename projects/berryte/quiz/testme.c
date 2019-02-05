@@ -16,26 +16,27 @@
 
 char inputChar()
 {
-    int ranNum; //random number to generate a char
-    int lowBound = 32; //on ascii table this is the lowest printable char ' '
-    int upBound = 126; //on ascii table - highest printable char '~'
-    ranNum = (rand() % (upBound - lowBound + 1)) + lowBound; //generate random num
-    char randomChar = ranNum; //convert to char
-    return randomChar;
+    	int ranNum; //random number to generate a char
+    	int lowBound = 32; //on ascii table this is the lowest printable char ' '
+    	int upBound = 126; //on ascii table - highest printable char '~'
+    	ranNum = (rand() % (upBound - lowBound + 1)) + lowBound; //generate random num
+    	char randomChar = ranNum; //convert to char
+    	return randomChar;
 }
 
 char *inputString()
 {
-    static char str[6]; //string to return (needs to be a static/constant size)
-    int lengthMax = sizeof(str); //string length
-    memset(str, '\0', lengthMax); //initialize with null
+    	static char str[6]; //string to return (needs to be a static/constant size)
+    	int lengthMax = sizeof(str); //string length
+    	memset(str, '\0', lengthMax); //initialize with null
 
-    /*Fill string with random characters*/
-    int i;
-    for(i = 0; i < lengthMax -1; i++){
-        str[i] = inputChar();
-    }
-    return str;
+    	/*Fill string with random characters*/
+	str[0] = 'r';
+	str[1] = 'e';
+	str[2] = 's';
+	str[3] = 'e';
+	str[4] = inputChar();
+    	return str;
 }
 
 void testme()
