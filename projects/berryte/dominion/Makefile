@@ -35,5 +35,17 @@ player: player.c interface.o
 
 all: playdom player 
 
+randomTest: dominion.h rngs.o dominion.c randomtestcard1.c randomtestcard2.c randomtestadventurer.c
+	echo -e "Running Random Test Suite on Dominion...\n" > randomtestresults.out
+	gcc -o randomTestAdventurer dominion.c rngs.o randomtestadventurer.c $(CFLAGS)
+	./randomTestAdventurer >> randomtestresults.out
+	gcov dominion.c >> randomtestresults.out
+	gcc -o randomTest1 dominion.c rngs.o randomtestcard1.c $(CFLAGS)
+	./randomTest1 >> randomtestresults.out
+	gcov dominion.c >> randomtestresults.out
+	gcc -o randomTest2 dominion.c rngs.o randomtestcard2.c $(CFLAGS)
+	./randomTest2 >> randomtestresults.out
+	gcov dominion.c >> randomtestresults.out
+
 clean:
 	rm -f *.o playdom.exe playdom player player.exe  *.gcov *.gcda *.gcno *.so *.out testDrawCard testDrawCard.exe
