@@ -52,16 +52,24 @@ int main(){
 		int tHand = 0; //treasure in hand
 		int tDeck = 0; //treasure in deck
 		int tDiscard = 0; //treasure in discard
+		printf("T: %d, C: %d, S: %d, G: %d\n", numTreasure, numCoppers, numSilver, numGold);
 
 		//Set up deck with random information for all players  
 		int i;
 		for(i = 0; i < numPlayers; i++){
-			//Alter hand
 			int j;
 			int co = 0; //copper
 			int si = 0; //silver
 			int go = 0; //gold
+			
+			//reset cards 
+			for(j = 0; j <= cardSize; j++){
+				testGame.hand[i][j] = province; //fill in the card
+				testGame.deck[i][j] = province;
+				testGame.discard[i][j] = province;
+			}
 
+			//Alter Hand
 			testGame.handCount[i] = numHand;
 			testGame.hand[i][0] = adventurer;
 			for(j = 1; j < testGame.handCount[i]; j++){
@@ -69,36 +77,37 @@ int main(){
 				if(co != numCoppers){
 					testGame.hand[i][j] = copper;
 					co++;
-					tHand++;
 				}
-				else if(si != numSilver){
-					testGame.hand[i][j] = silver;
-					si++;
-					tHand++;
+				else{
+					if(si != numSilver){
+                                        	testGame.hand[i][j] = silver;
+                                        	si++;
+					}
+					else{
+						if(go != numGold){
+                                        		testGame.hand[i][j] = gold;
+                                        		go++;
+                                		}	
+					}
 				}
-				else if(go != numGold){
-					testGame.hand[i][j] = gold;
-					go++;
-					tHand++;
-				}	
 			}
 
 			//Alter Deck
 			testGame.deckCount[i] = numDeck;
 			for(j = 0; j < testGame.deckCount[i]; j++){
-				testGame.hand[i][j] = province; //fill in the card
+				testGame.deck[i][j] = province; //fill in the card
                                 if(co != numCoppers){
-                                        testGame.hand[i][j] = copper;
+                                        testGame.deck[i][j] = copper;
                                         co++;
 					tDeck++;
                                 }
                                 else if(si != numSilver){
-                                        testGame.hand[i][j] = silver;
+                                        testGame.deck[i][j] = silver;
                                         si++;
 					tDeck++;
                                 }
                                 else if(go != numGold){
-                                        testGame.hand[i][j] = gold;
+                                        testGame.deck[i][j] = gold;
                                         go++;
 					tDeck++;
                                 }
@@ -107,66 +116,76 @@ int main(){
 			//Alter Discard
 			testGame.discardCount[i] = numDiscard;
 			for(j = 0; j < testGame.discardCount[i]; j++){
-				testGame.hand[i][j] = province; //fill in the card
+				testGame.discard[i][j] = province; //fill in the card
                                 if(co != numCoppers){
-                                        testGame.hand[i][j] = copper;
+                                        testGame.discard[i][j] = copper;
                                         co++;
 					tDiscard++;
                                 }
                                 else if(si != numSilver){
-                                        testGame.hand[i][j] = silver;
+                                        testGame.discard[i][j] = silver;
                                         si++;
 					tDiscard++;
                                 }
                                 else if(go != numGold){
-                                        testGame.hand[i][j] = gold;
+                                        testGame.discard[i][j] = gold;
                                         go++;
 					tDiscard++;
                                 }
 			}
-			//PlayAdventurer for this player
-/*			playAdventurer(&testGame, i, temp);
-
-			//Test if implemented correctly
-
-			//If there were 2 treasure cards not in the hand
-			//they should have been added to the hand
-			if((tDiscard + tDeck) >= 2){
-				//Iterate through hand and there should be 2 more treasure cards
-				int k;
-				int handTreasures = 0;
-				printf("\tPlayer %d test: 2 Treasure cards added to hand\n", i + 1);
-				for(k = 0; k < testGame.handCount[i]; k++){
-					if(testGame.hand[i][k] == copper || testGame.hand[i][k] == silver || testGame.hand[i][k] == gold){
-						handTreasures++;
-					}
-				}
-				if(handTreasures == (tHand + 2)){
-					printf("\t\tTest Successful!\n");
-				}
-				else{
-					printf("\t\tTest Failed. 2 Treasure cards were not added to the hand.\n");	
-				}
+	
+		}		
+		//PlayAdventurer for first player becaus it is the same as all the others
+		//playAdventurer(&testGame, 0, temp);
+		
+		//Test if implemented correctly
+		//Iterate though hand and see how many treasures there are	
+		int k;
+		int handTreasures = 0;
+		for(k = 0; k < testGame.handCount[0]; k++){
+			if(testGame.hand[0][k] == copper || testGame.hand[0][k] == silver || testGame.hand[0][k] == gold){
+				handTreasures++;
 			}
-			else if((tDiscard + tDeck) == 1){
-				//Iterate through hand and there should be 2 more treasure cards
-				int k;
-				int handTreasures = 0;
-				printf("\tPlayer %d test: Only 1 Treasure card outside hand\n", i + 1);
-				for(k = 0; k < testGame.handCount[i]; k++){
-					if(testGame.hand[i][k] == copper || testGame.hand[i][k] == silver || testGame.hand[i][k] == gold){
-						handTreasures++;
-					}
-				}
-				if(handTreasures == (tHand + 2)){
-					printf("\t\tTest Successful!\n");
-				}
-				else{
-					printf("\t\tTest Failed. 2 Treasure cards were not added to the hand.\n");
-				}
+		}
+		tHand = handTreasures;
+		printf("Pre:%d \n", handTreasures);
+		playAdventurer(&testGame, 0, temp);
+		handTreasures = 0;
+		for(k = 0; k < testGame.handCount[0]; k++){
+                        if(testGame.hand[0][k] == copper || testGame.hand[0][k] == silver || testGame.hand[0][k] == gold){
+                                handTreasures++;
+                        }
+                }
+printf("Post:%d \n", handTreasures);
+		//If there were 2 treasure cards not in the hand
+		//they should have been added to the hand
+		if((tDiscard + tDeck) >= 2){
+			printf("\tTest: 2 Treasure cards added to hand\n");
+			if(handTreasures == (tHand + 2)){
+				printf("\t\tTest Successful!\n");
 			}
-*/		}		
-
+			else{
+				printf("\t\tTest Failed. 2 Treasure cards were not added to the hand.\n");
+			}
+		}
+		else if((tDiscard + tDeck) == 1){
+			printf("\tTest: Only 1 Treasure card outside of hand\n");
+			if(handTreasures == (tHand + 1)){
+				printf("\t\tTest Successful!\n");
+			}
+			else{
+				printf("\t\tTest Failed. 1 Treasure cards was not added to the hand.\n");
+			}
+		}
+		else if((tDiscard + tDeck) == 0){
+			printf("\tTest: No More Treasure Cards to add to hand\n");
+                        if(handTreasures == tHand){
+                                printf("\t\tTest Successful!\n");
+                        }
+                        else{
+                                printf("\t\tTest Failed. Pre-Treasures: %d and Post-Treasures: %d. Do not match.\n", tHand, handTreasures);
+                        }
+		}
 		numTests++; //used to stop the tests
 	}
 	return 0;
