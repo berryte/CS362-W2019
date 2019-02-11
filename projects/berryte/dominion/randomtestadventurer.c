@@ -222,6 +222,35 @@ int main(){
 			printf("\t\tTest Failed.  Adventurer card still in Hand\n");
 		}
 
+		//Check that Hand size increased
+		if((tDiscard + tDeck) >= 2){
+			printf("\tTest: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)\n");
+			if(testGame.handCount[0] == (numHand + 1)){
+				printf("\t\tTest Sucessful!\n");
+			}
+			else{
+				printf("\t\tTest Failed. %d added to Hand.\n", testGame.handCount[0] - numHand);
+			}
+		}
+		else if((tDiscard + tDeck) == 1){
+			printf("\tTest: Overall Hand Count Increased by 0 (Added 1 Treasure Cards - Discard Adventurer)\n");
+			if(testGame.handCount[0] == numHand ){
+                                printf("\t\tTest Sucessful!\n");
+                        }
+                        else{
+                                printf("\t\tTest Failed. %d added to Hand.\n", testGame.handCount[0] - numHand);
+                        }
+		}
+		else if((tDiscard + tDeck) == 0){
+			printf("\tTest: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)\n");
+			if(testGame.handCount[0] == (numHand - 1)){
+                                printf("\t\tTest Sucessful!\n");
+                        }
+                        else{
+                                printf("\t\tTest Failed. %d added to Hand.\n", testGame.handCount[0] - numHand);
+                        }
+		}
+		
 		numTests++; //used to stop the tests
 	}
 	return 0;
