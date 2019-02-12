@@ -93,7 +93,7 @@ int main(){
 		}
 
 		printf("\tTest: Hand Count Increased by 2. (Draw 3 - Discard Smithy)\n");
-		if(numDeck + numDiscard >= 3){
+		if(numDeck + numDiscard >= 3){//more than3 cards available
 			if(numHand + 2 == testGame.handCount[0]){
 				printf("\t\tTest Successful!\n");
 			}
@@ -124,7 +124,7 @@ int main(){
 					found = 1;
 				}
 			}
-			if(found == 1){
+			if(found == 1){//Found in discard
 				printf("\t\tTest Successful!\n");
 			}
 			else{
@@ -134,7 +134,6 @@ int main(){
 		else{
 			printf("\t\tTest Failed. Smithy is still in hand.\n");
 		}
-
 		numTests++;
 	}
 	return 0;
