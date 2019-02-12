@@ -110,7 +110,30 @@ int main(){
 			}
 		}
 		
-
+		printf("\tTest: Smithy is discarded\n");
+		int k;
+		int found = 0;
+		for(k = 0; k < testGame.handCount[0]; k++){
+			if(testGame.hand[0][k] == smithy){
+				found = 1;
+			}
+		}
+		if(found == 0){ //not found in hand
+			for(k = 0; k < testGame.discardCount[0]; k++){
+				if(testGame.discard[0][k] == smithy){
+					found = 1;
+				}
+			}
+			if(found == 1){
+				printf("\t\tTest Successful!\n");
+			}
+			else{
+				printf("\t\tTest Failed. Smithy was discared incorrectly.\n");
+			}
+		}
+		else{
+			printf("\t\tTest Failed. Smithy is still in hand.\n");
+		}
 
 		numTests++;
 	}
