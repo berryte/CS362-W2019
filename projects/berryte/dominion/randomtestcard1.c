@@ -59,7 +59,7 @@ int main(){
 		}
 
 		//Play Smithy
-		playSmithy(&testGame, rand() % testGame.handCount[0], 0); //randomly generate hand position
+		playSmithy(&testGame, 0, 0);
 		
 		//Run Tests
 		printf("\tTest: 3 cards removed from Deck\n");
@@ -128,7 +128,7 @@ int main(){
 				printf("\t\tTest Successful!\n");
 			}
 			else{
-				printf("\t\tTest Failed. Smithy was discared incorrectly.\n");
+				printf("\t\tTest Failed. Smithy was discarded incorrectly.\n");
 			}
 		}
 		else{
