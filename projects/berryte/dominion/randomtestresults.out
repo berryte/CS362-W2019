@@ -7,17 +7,17 @@ Test 1:
 	Test: No More Treasure Cards to add to hand
 		Test Successful!
 	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
+		Test Sucessful!
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. 0 added to Hand.
+		Test Failed. -8 added to Hand.
 
 Test 2:
 	Test: 2 Treasure cards added to hand
-		Test Successful!
+		Test Failed. 3 Treasure cards were added to the hand.
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
-		Test Failed. 2 added to Hand.
+		Test Failed. 3 added to Hand.
 
 Test 3:
 	Test: 2 Treasure cards added to hand
@@ -29,11 +29,11 @@ Test 3:
 
 Test 4:
 	Test: 2 Treasure cards added to hand
-		Test Failed. 3 Treasure cards were added to the hand.
+		Test Successful!
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
-		Test Failed. 3 added to Hand.
+		Test Failed. 2 added to Hand.
 
 Test 5:
 	Test: 2 Treasure cards added to hand
@@ -44,12 +44,12 @@ Test 5:
 		Test Failed. 3 added to Hand.
 
 Test 6:
-	Test: 2 Treasure cards added to hand
-		Test Failed. 3 Treasure cards were added to the hand.
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
-		Test Failed. 3 added to Hand.
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -3 added to Hand.
 
 Test 7:
 	Test: 2 Treasure cards added to hand
@@ -68,46 +68,6 @@ Test 8:
 		Test Failed. 1 added to Hand.
 
 Test 9:
-	Test: No More Treasure Cards to add to hand
-		Test Successful!
-	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -7 added to Hand.
-
-Test 10:
-	Test: No More Treasure Cards to add to hand
-		Test Successful!
-	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -2 added to Hand.
-
-Test 11:
-	Test: No More Treasure Cards to add to hand
-		Test Successful!
-	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -3 added to Hand.
-
-Test 12:
-	Test: 2 Treasure cards added to hand
-		Test Failed. 3 Treasure cards were added to the hand.
-	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
-		Test Failed. 3 added to Hand.
-
-Test 13:
-	Test: No More Treasure Cards to add to hand
-		Test Successful!
-	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Sucessful!
-
-Test 14:
 	Test: 2 Treasure cards added to hand
 		Test Successful!
 	Test: Adventurer Card was Discarded
@@ -115,31 +75,15 @@ Test 14:
 	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
 		Test Failed. 2 added to Hand.
 
-Test 15:
+Test 10:
 	Test: No More Treasure Cards to add to hand
 		Test Successful!
 	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -5 added to Hand.
-
-Test 16:
-	Test: No More Treasure Cards to add to hand
-		Test Successful!
-	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. 0 added to Hand.
-
-Test 17:
-	Test: No More Treasure Cards to add to hand
-		Test Successful!
-	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
 		Test Sucessful!
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -8 added to Hand.
 
-Test 18:
+Test 11:
 	Test: Only 1 Treasure card outside of hand
 		Test Successful!
 	Test: Adventurer Card was Discarded
@@ -147,29 +91,85 @@ Test 18:
 	Test: Overall Hand Count Increased by 0 (Added 1 Treasure Cards - Discard Adventurer)
 		Test Failed. 1 added to Hand.
 
-Test 19:
+Test 12:
+	Test: Only 1 Treasure card outside of hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 0 (Added 1 Treasure Cards - Discard Adventurer)
+		Test Failed. 1 added to Hand.
+
+Test 13:
+	Test: Only 1 Treasure card outside of hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 0 (Added 1 Treasure Cards - Discard Adventurer)
+		Test Failed. 1 added to Hand.
+
+Test 14:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -6 added to Hand.
+
+Test 15:
 	Test: 2 Treasure cards added to hand
 		Test Failed. 3 Treasure cards were added to the hand.
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
 		Test Failed. 3 added to Hand.
+
+Test 16:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 3 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Failed. 3 added to Hand.
+
+Test 17:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -5 added to Hand.
+
+Test 18:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 19:
+	Test: 2 Treasure cards added to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Failed. 2 added to Hand.
 
 Test 20:
 	Test: 2 Treasure cards added to hand
-		Test Failed. 3 Treasure cards were added to the hand.
+		Test Successful!
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
-		Test Failed. 3 added to Hand.
+		Test Failed. 2 added to Hand.
 
 Test 21:
 	Test: 2 Treasure cards added to hand
-		Test Failed. 3 Treasure cards were added to the hand.
+		Test Successful!
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
-		Test Failed. 3 added to Hand.
+		Test Failed. 2 added to Hand.
 
 Test 22:
 	Test: No More Treasure Cards to add to hand
@@ -177,7 +177,7 @@ Test 22:
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -4 added to Hand.
+		Test Failed. -3 added to Hand.
 
 Test 23:
 	Test: 2 Treasure cards added to hand
@@ -196,12 +196,12 @@ Test 24:
 		Test Failed. 3 added to Hand.
 
 Test 25:
-	Test: 2 Treasure cards added to hand
-		Test Failed. 3 Treasure cards were added to the hand.
+	Test: Only 1 Treasure card outside of hand
+		Test Successful!
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
-		Test Failed. 3 added to Hand.
+	Test: Overall Hand Count Increased by 0 (Added 1 Treasure Cards - Discard Adventurer)
+		Test Failed. 1 added to Hand.
 
 Test 26:
 	Test: 2 Treasure cards added to hand
@@ -212,20 +212,20 @@ Test 26:
 		Test Failed. 3 added to Hand.
 
 Test 27:
-	Test: No More Treasure Cards to add to hand
-		Test Successful!
-	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -4 added to Hand.
-
-Test 28:
 	Test: 2 Treasure cards added to hand
 		Test Successful!
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
 		Test Failed. 2 added to Hand.
+
+Test 28:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. 0 added to Hand.
 
 Test 29:
 	Test: Only 1 Treasure card outside of hand
@@ -239,17 +239,17 @@ Test 30:
 	Test: No More Treasure Cards to add to hand
 		Test Successful!
 	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
 		Test Sucessful!
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -4 added to Hand.
 
 Test 31:
-	Test: 2 Treasure cards added to hand
+	Test: No More Treasure Cards to add to hand
 		Test Successful!
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
-		Test Failed. 2 added to Hand.
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -2 added to Hand.
 
 Test 32:
 	Test: No More Treasure Cards to add to hand
@@ -257,7 +257,7 @@ Test 32:
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -2 added to Hand.
+		Test Sucessful!
 
 Test 33:
 	Test: No More Treasure Cards to add to hand
@@ -265,7 +265,7 @@ Test 33:
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. 0 added to Hand.
+		Test Failed. -3 added to Hand.
 
 Test 34:
 	Test: No More Treasure Cards to add to hand
@@ -273,31 +273,31 @@ Test 34:
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -2 added to Hand.
+		Test Failed. -5 added to Hand.
 
 Test 35:
 	Test: No More Treasure Cards to add to hand
 		Test Successful!
 	Test: Adventurer Card was Discarded
-		Test Sucessful!
+		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -4 added to Hand.
+		Test Sucessful!
 
 Test 36:
-	Test: No More Treasure Cards to add to hand
-		Test Successful!
+	Test: 2 Treasure cards added to hand
+		Test Failed. 3 Treasure cards were added to the hand.
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. 0 added to Hand.
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Failed. 3 added to Hand.
 
 Test 37:
-	Test: No More Treasure Cards to add to hand
-		Test Successful!
+	Test: 2 Treasure cards added to hand
+		Test Failed. 3 Treasure cards were added to the hand.
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. 0 added to Hand.
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Failed. 3 added to Hand.
 
 Test 38:
 	Test: No More Treasure Cards to add to hand
@@ -305,23 +305,23 @@ Test 38:
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -2 added to Hand.
+		Test Sucessful!
 
 Test 39:
-	Test: Only 1 Treasure card outside of hand
+	Test: No More Treasure Cards to add to hand
 		Test Successful!
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Increased by 0 (Added 1 Treasure Cards - Discard Adventurer)
-		Test Failed. 1 added to Hand.
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -2 added to Hand.
 
 Test 40:
-	Test: 2 Treasure cards added to hand
-		Test Failed. 3 Treasure cards were added to the hand.
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
 	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
-		Test Failed. 3 added to Hand.
+		Test Sucessful!
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -11 added to Hand.
 
 Test 41:
 	Test: No More Treasure Cards to add to hand
@@ -329,15 +329,15 @@ Test 41:
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -2 added to Hand.
+		Test Failed. 0 added to Hand.
 
 Test 42:
-	Test: No More Treasure Cards to add to hand
+	Test: Only 1 Treasure card outside of hand
 		Test Successful!
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. 0 added to Hand.
+	Test: Overall Hand Count Increased by 0 (Added 1 Treasure Cards - Discard Adventurer)
+		Test Failed. 1 added to Hand.
 
 Test 43:
 	Test: No More Treasure Cards to add to hand
@@ -345,15 +345,15 @@ Test 43:
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Sucessful!
+		Test Failed. -2 added to Hand.
 
 Test 44:
-	Test: 2 Treasure cards added to hand
-		Test Failed. 3 Treasure cards were added to the hand.
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
 	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
-		Test Failed. 3 added to Hand.
+		Test Sucessful!
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -8 added to Hand.
 
 Test 45:
 	Test: No More Treasure Cards to add to hand
@@ -372,12 +372,12 @@ Test 46:
 		Test Failed. -4 added to Hand.
 
 Test 47:
-	Test: No More Treasure Cards to add to hand
-		Test Successful!
+	Test: 2 Treasure cards added to hand
+		Test Failed. 3 Treasure cards were added to the hand.
 	Test: Adventurer Card was Discarded
-		Test Sucessful!
-	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -3 added to Hand.
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Failed. 3 added to Hand.
 
 Test 48:
 	Test: 2 Treasure cards added to hand
@@ -388,70 +388,6 @@ Test 48:
 		Test Failed. 3 added to Hand.
 
 Test 49:
-	Test: 2 Treasure cards added to hand
-		Test Successful!
-	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
-		Test Failed. 2 added to Hand.
-
-Test 50:
-	Test: 2 Treasure cards added to hand
-		Test Failed. 3 Treasure cards were added to the hand.
-	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
-		Test Failed. 3 added to Hand.
-
-Test 51:
-	Test: No More Treasure Cards to add to hand
-		Test Successful!
-	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -3 added to Hand.
-
-Test 52:
-	Test: 2 Treasure cards added to hand
-		Test Failed. 3 Treasure cards were added to the hand.
-	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
-		Test Failed. 3 added to Hand.
-
-Test 53:
-	Test: 2 Treasure cards added to hand
-		Test Failed. 3 Treasure cards were added to the hand.
-	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
-		Test Failed. 3 added to Hand.
-
-Test 54:
-	Test: No More Treasure Cards to add to hand
-		Test Successful!
-	Test: Adventurer Card was Discarded
-		Test Sucessful!
-	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -9 added to Hand.
-
-Test 55:
-	Test: No More Treasure Cards to add to hand
-		Test Successful!
-	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. 0 added to Hand.
-
-Test 56:
-	Test: No More Treasure Cards to add to hand
-		Test Successful!
-	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -7 added to Hand.
-
-Test 57:
 	Test: Only 1 Treasure card outside of hand
 		Test Successful!
 	Test: Adventurer Card was Discarded
@@ -459,7 +395,15 @@ Test 57:
 	Test: Overall Hand Count Increased by 0 (Added 1 Treasure Cards - Discard Adventurer)
 		Test Failed. 1 added to Hand.
 
-Test 58:
+Test 50:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 51:
 	Test: 2 Treasure cards added to hand
 		Test Failed. 3 Treasure cards were added to the hand.
 	Test: Adventurer Card was Discarded
@@ -467,15 +411,15 @@ Test 58:
 	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
 		Test Failed. 3 added to Hand.
 
-Test 59:
+Test 52:
 	Test: 2 Treasure cards added to hand
-		Test Failed. 3 Treasure cards were added to the hand.
+		Test Successful!
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
-		Test Failed. 3 added to Hand.
+		Test Failed. 2 added to Hand.
 
-Test 60:
+Test 53:
 	Test: No More Treasure Cards to add to hand
 		Test Successful!
 	Test: Adventurer Card was Discarded
@@ -483,61 +427,117 @@ Test 60:
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
 		Test Failed. -2 added to Hand.
 
-Test 61:
-	Test: No More Treasure Cards to add to hand
-		Test Successful!
-	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. 0 added to Hand.
-
-Test 62:
+Test 54:
 	Test: No More Treasure Cards to add to hand
 		Test Successful!
 	Test: Adventurer Card was Discarded
 		Test Sucessful!
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -8 added to Hand.
+		Test Failed. -3 added to Hand.
+
+Test 55:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 3 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Failed. 3 added to Hand.
+
+Test 56:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 3 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Failed. 3 added to Hand.
+
+Test 57:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -3 added to Hand.
+
+Test 58:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -5 added to Hand.
+
+Test 59:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -5 added to Hand.
+
+Test 60:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 61:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 3 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Failed. 3 added to Hand.
+
+Test 62:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 3 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Failed. 3 added to Hand.
 
 Test 63:
-	Test: 2 Treasure cards added to hand
-		Test Failed. 3 Treasure cards were added to the hand.
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
-		Test Failed. 3 added to Hand.
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -6 added to Hand.
 
 Test 64:
-	Test: No More Treasure Cards to add to hand
-		Test Successful!
-	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -4 added to Hand.
-
-Test 65:
-	Test: No More Treasure Cards to add to hand
-		Test Successful!
-	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. 0 added to Hand.
-
-Test 66:
 	Test: 2 Treasure cards added to hand
 		Test Failed. 3 Treasure cards were added to the hand.
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
 		Test Failed. 3 added to Hand.
+
+Test 65:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 3 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Failed. 3 added to Hand.
+
+Test 66:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Sucessful!
 
 Test 67:
 	Test: 2 Treasure cards added to hand
-		Test Successful!
+		Test Failed. 3 Treasure cards were added to the hand.
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
-		Test Failed. 2 added to Hand.
+		Test Failed. 3 added to Hand.
 
 Test 68:
 	Test: 2 Treasure cards added to hand
@@ -551,83 +551,11 @@ Test 69:
 	Test: No More Treasure Cards to add to hand
 		Test Successful!
 	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -3 added to Hand.
-
-Test 70:
-	Test: Only 1 Treasure card outside of hand
-		Test Successful!
-	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Increased by 0 (Added 1 Treasure Cards - Discard Adventurer)
-		Test Failed. 1 added to Hand.
-
-Test 71:
-	Test: 2 Treasure cards added to hand
-		Test Failed. 3 Treasure cards were added to the hand.
-	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
-		Test Failed. 3 added to Hand.
-
-Test 72:
-	Test: Only 1 Treasure card outside of hand
-		Test Successful!
-	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Increased by 0 (Added 1 Treasure Cards - Discard Adventurer)
-		Test Failed. 1 added to Hand.
-
-Test 73:
-	Test: No More Treasure Cards to add to hand
-		Test Successful!
-	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
+		Test Sucessful!
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
 		Test Failed. -6 added to Hand.
 
-Test 74:
-	Test: Only 1 Treasure card outside of hand
-		Test Successful!
-	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Increased by 0 (Added 1 Treasure Cards - Discard Adventurer)
-		Test Failed. 1 added to Hand.
-
-Test 75:
-	Test: No More Treasure Cards to add to hand
-		Test Successful!
-	Test: Adventurer Card was Discarded
-		Test Sucessful!
-	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -9 added to Hand.
-
-Test 76:
-	Test: No More Treasure Cards to add to hand
-		Test Successful!
-	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Sucessful!
-
-Test 77:
-	Test: No More Treasure Cards to add to hand
-		Test Successful!
-	Test: Adventurer Card was Discarded
-		Test Sucessful!
-	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -7 added to Hand.
-
-Test 78:
-	Test: No More Treasure Cards to add to hand
-		Test Successful!
-	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -5 added to Hand.
-
-Test 79:
+Test 70:
 	Test: No More Treasure Cards to add to hand
 		Test Successful!
 	Test: Adventurer Card was Discarded
@@ -635,7 +563,31 @@ Test 79:
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
 		Test Failed. 0 added to Hand.
 
-Test 80:
+Test 71:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. 0 added to Hand.
+
+Test 72:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. 0 added to Hand.
+
+Test 73:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Sucessful!
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -6 added to Hand.
+
+Test 74:
 	Test: No More Treasure Cards to add to hand
 		Test Successful!
 	Test: Adventurer Card was Discarded
@@ -643,13 +595,61 @@ Test 80:
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
 		Test Failed. -2 added to Hand.
 
-Test 81:
+Test 75:
 	Test: No More Treasure Cards to add to hand
 		Test Successful!
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -3 added to Hand.
+		Test Failed. 0 added to Hand.
+
+Test 76:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 3 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Failed. 3 added to Hand.
+
+Test 77:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 78:
+	Test: 2 Treasure cards added to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Failed. 2 added to Hand.
+
+Test 79:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 3 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Failed. 3 added to Hand.
+
+Test 80:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -4 added to Hand.
+
+Test 81:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 3 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Failed. 3 added to Hand.
 
 Test 82:
 	Test: 2 Treasure cards added to hand
@@ -665,15 +665,15 @@ Test 83:
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. 0 added to Hand.
+		Test Failed. -5 added to Hand.
 
 Test 84:
-	Test: No More Treasure Cards to add to hand
+	Test: 2 Treasure cards added to hand
 		Test Successful!
 	Test: Adventurer Card was Discarded
-		Test Sucessful!
-	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -6 added to Hand.
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Failed. 2 added to Hand.
 
 Test 85:
 	Test: 2 Treasure cards added to hand
@@ -684,12 +684,12 @@ Test 85:
 		Test Failed. 3 added to Hand.
 
 Test 86:
-	Test: Only 1 Treasure card outside of hand
-		Test Successful!
+	Test: 2 Treasure cards added to hand
+		Test Failed. 3 Treasure cards were added to the hand.
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Increased by 0 (Added 1 Treasure Cards - Discard Adventurer)
-		Test Failed. 1 added to Hand.
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Failed. 3 added to Hand.
 
 Test 87:
 	Test: No More Treasure Cards to add to hand
@@ -697,7 +697,7 @@ Test 87:
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -3 added to Hand.
+		Test Failed. 0 added to Hand.
 
 Test 88:
 	Test: 2 Treasure cards added to hand
@@ -708,20 +708,20 @@ Test 88:
 		Test Failed. 3 added to Hand.
 
 Test 89:
-	Test: 2 Treasure cards added to hand
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Sucessful!
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -4 added to Hand.
+
+Test 90:
+	Test: No More Treasure Cards to add to hand
 		Test Successful!
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
-		Test Failed. 2 added to Hand.
-
-Test 90:
-	Test: 2 Treasure cards added to hand
-		Test Failed. 3 Treasure cards were added to the hand.
-	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
-		Test Failed. 3 added to Hand.
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Sucessful!
 
 Test 91:
 	Test: 2 Treasure cards added to hand
@@ -732,22 +732,6 @@ Test 91:
 		Test Failed. 3 added to Hand.
 
 Test 92:
-	Test: No More Treasure Cards to add to hand
-		Test Successful!
-	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Sucessful!
-
-Test 93:
-	Test: Only 1 Treasure card outside of hand
-		Test Successful!
-	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Increased by 0 (Added 1 Treasure Cards - Discard Adventurer)
-		Test Failed. 1 added to Hand.
-
-Test 94:
 	Test: 2 Treasure cards added to hand
 		Test Failed. 3 Treasure cards were added to the hand.
 	Test: Adventurer Card was Discarded
@@ -755,21 +739,37 @@ Test 94:
 	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
 		Test Failed. 3 added to Hand.
 
-Test 95:
+Test 93:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 3 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Failed. 3 added to Hand.
+
+Test 94:
 	Test: No More Treasure Cards to add to hand
 		Test Successful!
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -2 added to Hand.
+		Test Sucessful!
+
+Test 95:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 3 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Failed. 3 added to Hand.
 
 Test 96:
-	Test: No More Treasure Cards to add to hand
-		Test Successful!
+	Test: 2 Treasure cards added to hand
+		Test Failed. 3 Treasure cards were added to the hand.
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. 0 added to Hand.
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Failed. 3 added to Hand.
 
 Test 97:
 	Test: No More Treasure Cards to add to hand
@@ -780,22 +780,30 @@ Test 97:
 		Test Failed. 0 added to Hand.
 
 Test 98:
-	Test: 2 Treasure cards added to hand
-		Test Failed. 3 Treasure cards were added to the hand.
-	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
-		Test Failed. 3 added to Hand.
-
-Test 99:
 	Test: No More Treasure Cards to add to hand
 		Test Successful!
 	Test: Adventurer Card was Discarded
-		Test Sucessful!
+		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -5 added to Hand.
+		Test Failed. 0 added to Hand.
+
+Test 99:
+	Test: Only 1 Treasure card outside of hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 0 (Added 1 Treasure Cards - Discard Adventurer)
+		Test Failed. 1 added to Hand.
 
 Test 100:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -2 added to Hand.
+
+Test 101:
 	Test: 2 Treasure cards added to hand
 		Test Failed. 3 Treasure cards were added to the hand.
 	Test: Adventurer Card was Discarded
@@ -803,7 +811,15 @@ Test 100:
 	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
 		Test Failed. 3 added to Hand.
 
-Test 101:
+Test 102:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -2 added to Hand.
+
+Test 103:
 	Test: No More Treasure Cards to add to hand
 		Test Successful!
 	Test: Adventurer Card was Discarded
@@ -811,29 +827,13 @@ Test 101:
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
 		Test Failed. -4 added to Hand.
 
-Test 102:
-	Test: 2 Treasure cards added to hand
-		Test Failed. 3 Treasure cards were added to the hand.
-	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
-		Test Failed. 3 added to Hand.
-
-Test 103:
-	Test: 2 Treasure cards added to hand
-		Test Failed. 3 Treasure cards were added to the hand.
-	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
-		Test Failed. 3 added to Hand.
-
 Test 104:
 	Test: 2 Treasure cards added to hand
-		Test Successful!
+		Test Failed. 3 Treasure cards were added to the hand.
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
-		Test Failed. 2 added to Hand.
+		Test Failed. 3 added to Hand.
 
 Test 105:
 	Test: 2 Treasure cards added to hand
@@ -849,31 +849,31 @@ Test 106:
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Sucessful!
+		Test Failed. -3 added to Hand.
 
 Test 107:
 	Test: No More Treasure Cards to add to hand
 		Test Successful!
 	Test: Adventurer Card was Discarded
-		Test Sucessful!
+		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -9 added to Hand.
+		Test Failed. 0 added to Hand.
 
 Test 108:
-	Test: No More Treasure Cards to add to hand
+	Test: 2 Treasure cards added to hand
 		Test Successful!
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -5 added to Hand.
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Failed. 2 added to Hand.
 
 Test 109:
-	Test: No More Treasure Cards to add to hand
-		Test Successful!
+	Test: 2 Treasure cards added to hand
+		Test Failed. 3 Treasure cards were added to the hand.
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Sucessful!
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Failed. 3 added to Hand.
 
 Test 110:
 	Test: No More Treasure Cards to add to hand
@@ -881,31 +881,31 @@ Test 110:
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -2 added to Hand.
+		Test Sucessful!
 
 Test 111:
-	Test: 2 Treasure cards added to hand
-		Test Failed. 3 Treasure cards were added to the hand.
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
-		Test Failed. 3 added to Hand.
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -3 added to Hand.
 
 Test 112:
 	Test: No More Treasure Cards to add to hand
 		Test Successful!
 	Test: Adventurer Card was Discarded
-		Test Sucessful!
+		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -6 added to Hand.
+		Test Failed. -5 added to Hand.
 
 Test 113:
-	Test: 2 Treasure cards added to hand
-		Test Failed. 3 Treasure cards were added to the hand.
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
 	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
-		Test Failed. 3 added to Hand.
+		Test Sucessful!
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -10 added to Hand.
 
 Test 114:
 	Test: No More Treasure Cards to add to hand
@@ -913,7 +913,7 @@ Test 114:
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -6 added to Hand.
+		Test Failed. -4 added to Hand.
 
 Test 115:
 	Test: No More Treasure Cards to add to hand
@@ -929,23 +929,23 @@ Test 116:
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. 0 added to Hand.
+		Test Sucessful!
 
 Test 117:
-	Test: 2 Treasure cards added to hand
-		Test Failed. 3 Treasure cards were added to the hand.
+	Test: Only 1 Treasure card outside of hand
+		Test Successful!
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
-		Test Failed. 3 added to Hand.
+	Test: Overall Hand Count Increased by 0 (Added 1 Treasure Cards - Discard Adventurer)
+		Test Failed. 1 added to Hand.
 
 Test 118:
-	Test: 2 Treasure cards added to hand
-		Test Failed. 3 Treasure cards were added to the hand.
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
-		Test Failed. 3 added to Hand.
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -7 added to Hand.
 
 Test 119:
 	Test: 2 Treasure cards added to hand
@@ -956,20 +956,20 @@ Test 119:
 		Test Failed. 3 added to Hand.
 
 Test 120:
-	Test: 2 Treasure cards added to hand
-		Test Successful!
-	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
-		Test Failed. 2 added to Hand.
-
-Test 121:
 	Test: No More Treasure Cards to add to hand
 		Test Successful!
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -2 added to Hand.
+		Test Failed. -4 added to Hand.
+
+Test 121:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 3 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Failed. 3 added to Hand.
 
 Test 122:
 	Test: 2 Treasure cards added to hand
@@ -980,28 +980,28 @@ Test 122:
 		Test Failed. 3 added to Hand.
 
 Test 123:
-	Test: 2 Treasure cards added to hand
-		Test Successful!
-	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
-		Test Failed. 2 added to Hand.
-
-Test 124:
 	Test: No More Treasure Cards to add to hand
 		Test Successful!
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -5 added to Hand.
+		Test Failed. -2 added to Hand.
 
-Test 125:
-	Test: 2 Treasure cards added to hand
+Test 124:
+	Test: Only 1 Treasure card outside of hand
 		Test Successful!
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
-		Test Failed. 2 added to Hand.
+	Test: Overall Hand Count Increased by 0 (Added 1 Treasure Cards - Discard Adventurer)
+		Test Failed. 1 added to Hand.
+
+Test 125:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -4 added to Hand.
 
 Test 126:
 	Test: 2 Treasure cards added to hand
@@ -1012,20 +1012,20 @@ Test 126:
 		Test Failed. 3 added to Hand.
 
 Test 127:
-	Test: 2 Treasure cards added to hand
-		Test Failed. 3 Treasure cards were added to the hand.
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
-		Test Failed. 3 added to Hand.
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. 0 added to Hand.
 
 Test 128:
 	Test: No More Treasure Cards to add to hand
 		Test Successful!
 	Test: Adventurer Card was Discarded
-		Test Sucessful!
+		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -3 added to Hand.
+		Test Sucessful!
 
 Test 129:
 	Test: No More Treasure Cards to add to hand
@@ -1036,36 +1036,36 @@ Test 129:
 		Test Failed. 0 added to Hand.
 
 Test 130:
-	Test: No More Treasure Cards to add to hand
-		Test Successful!
+	Test: 2 Treasure cards added to hand
+		Test Failed. 3 Treasure cards were added to the hand.
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -2 added to Hand.
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Failed. 3 added to Hand.
 
 Test 131:
-	Test: No More Treasure Cards to add to hand
-		Test Successful!
+	Test: 2 Treasure cards added to hand
+		Test Failed. 3 Treasure cards were added to the hand.
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -3 added to Hand.
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Failed. 3 added to Hand.
 
 Test 132:
-	Test: No More Treasure Cards to add to hand
+	Test: Only 1 Treasure card outside of hand
 		Test Successful!
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -5 added to Hand.
+	Test: Overall Hand Count Increased by 0 (Added 1 Treasure Cards - Discard Adventurer)
+		Test Failed. 1 added to Hand.
 
 Test 133:
 	Test: No More Treasure Cards to add to hand
 		Test Successful!
 	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
+		Test Sucessful!
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -5 added to Hand.
+		Test Failed. -3 added to Hand.
 
 Test 134:
 	Test: 2 Treasure cards added to hand
@@ -1076,36 +1076,36 @@ Test 134:
 		Test Failed. 3 added to Hand.
 
 Test 135:
-	Test: 2 Treasure cards added to hand
+	Test: No More Treasure Cards to add to hand
 		Test Successful!
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
-		Test Failed. 2 added to Hand.
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. 0 added to Hand.
 
 Test 136:
 	Test: No More Treasure Cards to add to hand
 		Test Successful!
 	Test: Adventurer Card was Discarded
-		Test Sucessful!
+		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -4 added to Hand.
+		Test Failed. -6 added to Hand.
 
 Test 137:
 	Test: No More Treasure Cards to add to hand
 		Test Successful!
 	Test: Adventurer Card was Discarded
-		Test Sucessful!
-	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -7 added to Hand.
-
-Test 138:
-	Test: No More Treasure Cards to add to hand
-		Test Successful!
-	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -5 added to Hand.
+		Test Sucessful!
+
+Test 138:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 3 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Failed. 3 added to Hand.
 
 Test 139:
 	Test: No More Treasure Cards to add to hand
@@ -1113,7 +1113,7 @@ Test 139:
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. 0 added to Hand.
+		Test Failed. -3 added to Hand.
 
 Test 140:
 	Test: No More Treasure Cards to add to hand
@@ -1124,12 +1124,12 @@ Test 140:
 		Test Failed. -2 added to Hand.
 
 Test 141:
-	Test: No More Treasure Cards to add to hand
-		Test Successful!
+	Test: 2 Treasure cards added to hand
+		Test Failed. 3 Treasure cards were added to the hand.
 	Test: Adventurer Card was Discarded
-		Test Sucessful!
-	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -7 added to Hand.
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Failed. 3 added to Hand.
 
 Test 142:
 	Test: 2 Treasure cards added to hand
@@ -1140,12 +1140,12 @@ Test 142:
 		Test Failed. 3 added to Hand.
 
 Test 143:
-	Test: Only 1 Treasure card outside of hand
-		Test Successful!
+	Test: 2 Treasure cards added to hand
+		Test Failed. 3 Treasure cards were added to the hand.
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Increased by 0 (Added 1 Treasure Cards - Discard Adventurer)
-		Test Failed. 1 added to Hand.
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Failed. 3 added to Hand.
 
 Test 144:
 	Test: 2 Treasure cards added to hand
@@ -1156,60 +1156,60 @@ Test 144:
 		Test Failed. 3 added to Hand.
 
 Test 145:
-	Test: Only 1 Treasure card outside of hand
-		Test Successful!
-	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Increased by 0 (Added 1 Treasure Cards - Discard Adventurer)
-		Test Failed. 1 added to Hand.
-
-Test 146:
 	Test: No More Treasure Cards to add to hand
 		Test Successful!
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
 		Test Failed. 0 added to Hand.
+
+Test 146:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 3 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Failed. 3 added to Hand.
 
 Test 147:
 	Test: No More Treasure Cards to add to hand
 		Test Successful!
 	Test: Adventurer Card was Discarded
-		Test Sucessful!
+		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -9 added to Hand.
+		Test Failed. -5 added to Hand.
 
 Test 148:
 	Test: No More Treasure Cards to add to hand
 		Test Successful!
 	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
+		Test Sucessful!
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. 0 added to Hand.
+		Test Failed. -2 added to Hand.
 
 Test 149:
-	Test: 2 Treasure cards added to hand
-		Test Failed. 3 Treasure cards were added to the hand.
-	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
-		Test Failed. 3 added to Hand.
-
-Test 150:
 	Test: No More Treasure Cards to add to hand
 		Test Successful!
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. 0 added to Hand.
+		Test Failed. -4 added to Hand.
 
-Test 151:
+Test 150:
 	Test: 2 Treasure cards added to hand
-		Test Failed. 3 Treasure cards were added to the hand.
+		Test Successful!
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
-		Test Failed. 3 added to Hand.
+		Test Failed. 2 added to Hand.
+
+Test 151:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Sucessful!
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -8 added to Hand.
 
 Test 152:
 	Test: No More Treasure Cards to add to hand
@@ -1217,25 +1217,17 @@ Test 152:
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -3 added to Hand.
+		Test Failed. -4 added to Hand.
 
 Test 153:
-	Test: Only 1 Treasure card outside of hand
-		Test Successful!
-	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Increased by 0 (Added 1 Treasure Cards - Discard Adventurer)
-		Test Failed. 1 added to Hand.
-
-Test 154:
 	Test: No More Treasure Cards to add to hand
 		Test Successful!
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -6 added to Hand.
+		Test Failed. -4 added to Hand.
 
-Test 155:
+Test 154:
 	Test: 2 Treasure cards added to hand
 		Test Failed. 3 Treasure cards were added to the hand.
 	Test: Adventurer Card was Discarded
@@ -1243,15 +1235,7 @@ Test 155:
 	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
 		Test Failed. 3 added to Hand.
 
-Test 156:
-	Test: Only 1 Treasure card outside of hand
-		Test Successful!
-	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Increased by 0 (Added 1 Treasure Cards - Discard Adventurer)
-		Test Failed. 1 added to Hand.
-
-Test 157:
+Test 155:
 	Test: No More Treasure Cards to add to hand
 		Test Successful!
 	Test: Adventurer Card was Discarded
@@ -1259,13 +1243,29 @@ Test 157:
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
 		Test Failed. -3 added to Hand.
 
-Test 158:
+Test 156:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. 0 added to Hand.
+
+Test 157:
 	Test: 2 Treasure cards added to hand
-		Test Failed. 3 Treasure cards were added to the hand.
+		Test Successful!
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
-		Test Failed. 3 added to Hand.
+		Test Failed. 2 added to Hand.
+
+Test 158:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -7 added to Hand.
 
 Test 159:
 	Test: 2 Treasure cards added to hand
@@ -1281,55 +1281,55 @@ Test 160:
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. 0 added to Hand.
+		Test Sucessful!
 
 Test 161:
-	Test: 2 Treasure cards added to hand
-		Test Failed. 3 Treasure cards were added to the hand.
-	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
-		Test Failed. 3 added to Hand.
-
-Test 162:
 	Test: No More Treasure Cards to add to hand
 		Test Successful!
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -2 added to Hand.
+		Test Failed. 0 added to Hand.
 
-Test 163:
+Test 162:
 	Test: 2 Treasure cards added to hand
 		Test Failed. 3 Treasure cards were added to the hand.
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
 		Test Failed. 3 added to Hand.
+
+Test 163:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. 0 added to Hand.
 
 Test 164:
 	Test: No More Treasure Cards to add to hand
 		Test Successful!
 	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
+		Test Sucessful!
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -2 added to Hand.
+		Test Failed. -4 added to Hand.
 
 Test 165:
-	Test: 2 Treasure cards added to hand
-		Test Successful!
-	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
-		Test Failed. 2 added to Hand.
-
-Test 166:
 	Test: 2 Treasure cards added to hand
 		Test Failed. 3 Treasure cards were added to the hand.
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
 		Test Failed. 3 added to Hand.
+
+Test 166:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -3 added to Hand.
 
 Test 167:
 	Test: 2 Treasure cards added to hand
@@ -1340,12 +1340,12 @@ Test 167:
 		Test Failed. 3 added to Hand.
 
 Test 168:
-	Test: 2 Treasure cards added to hand
-		Test Failed. 3 Treasure cards were added to the hand.
+	Test: Only 1 Treasure card outside of hand
+		Test Successful!
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
-		Test Failed. 3 added to Hand.
+	Test: Overall Hand Count Increased by 0 (Added 1 Treasure Cards - Discard Adventurer)
+		Test Failed. 1 added to Hand.
 
 Test 169:
 	Test: No More Treasure Cards to add to hand
@@ -1353,23 +1353,23 @@ Test 169:
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Sucessful!
+		Test Failed. -6 added to Hand.
 
 Test 170:
 	Test: 2 Treasure cards added to hand
-		Test Failed. 3 Treasure cards were added to the hand.
+		Test Successful!
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
-		Test Failed. 3 added to Hand.
+		Test Failed. 2 added to Hand.
 
 Test 171:
 	Test: No More Treasure Cards to add to hand
 		Test Successful!
 	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
 		Test Sucessful!
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -8 added to Hand.
 
 Test 172:
 	Test: 2 Treasure cards added to hand
@@ -1385,23 +1385,23 @@ Test 173:
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. 0 added to Hand.
+		Test Failed. -7 added to Hand.
 
 Test 174:
-	Test: 2 Treasure cards added to hand
-		Test Failed. 3 Treasure cards were added to the hand.
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
-		Test Failed. 3 added to Hand.
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -2 added to Hand.
 
 Test 175:
-	Test: 2 Treasure cards added to hand
-		Test Failed. 3 Treasure cards were added to the hand.
+	Test: Only 1 Treasure card outside of hand
+		Test Successful!
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
-		Test Failed. 3 added to Hand.
+	Test: Overall Hand Count Increased by 0 (Added 1 Treasure Cards - Discard Adventurer)
+		Test Failed. 1 added to Hand.
 
 Test 176:
 	Test: 2 Treasure cards added to hand
@@ -1420,6 +1420,22 @@ Test 177:
 		Test Failed. 1 added to Hand.
 
 Test 178:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -5 added to Hand.
+
+Test 179:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -6 added to Hand.
+
+Test 180:
 	Test: 2 Treasure cards added to hand
 		Test Failed. 3 Treasure cards were added to the hand.
 	Test: Adventurer Card was Discarded
@@ -1427,45 +1443,29 @@ Test 178:
 	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
 		Test Failed. 3 added to Hand.
 
-Test 179:
-	Test: Only 1 Treasure card outside of hand
-		Test Successful!
-	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Increased by 0 (Added 1 Treasure Cards - Discard Adventurer)
-		Test Failed. 1 added to Hand.
-
-Test 180:
-	Test: 2 Treasure cards added to hand
-		Test Successful!
-	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
-		Test Failed. 2 added to Hand.
-
 Test 181:
-	Test: Only 1 Treasure card outside of hand
-		Test Successful!
-	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Increased by 0 (Added 1 Treasure Cards - Discard Adventurer)
-		Test Failed. 1 added to Hand.
-
-Test 182:
 	Test: No More Treasure Cards to add to hand
 		Test Successful!
 	Test: Adventurer Card was Discarded
 		Test Sucessful!
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -10 added to Hand.
+		Test Failed. -6 added to Hand.
 
-Test 183:
-	Test: No More Treasure Cards to add to hand
-		Test Successful!
+Test 182:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 3 Treasure cards were added to the hand.
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. 0 added to Hand.
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Failed. 3 added to Hand.
+
+Test 183:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 3 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Failed. 3 added to Hand.
 
 Test 184:
 	Test: 2 Treasure cards added to hand
@@ -1476,12 +1476,12 @@ Test 184:
 		Test Failed. 3 added to Hand.
 
 Test 185:
-	Test: No More Treasure Cards to add to hand
-		Test Successful!
+	Test: 2 Treasure cards added to hand
+		Test Failed. 3 Treasure cards were added to the hand.
 	Test: Adventurer Card was Discarded
-		Test Sucessful!
-	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -8 added to Hand.
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Failed. 3 added to Hand.
 
 Test 186:
 	Test: No More Treasure Cards to add to hand
@@ -1489,33 +1489,9 @@ Test 186:
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -3 added to Hand.
+		Test Failed. -7 added to Hand.
 
 Test 187:
-	Test: No More Treasure Cards to add to hand
-		Test Successful!
-	Test: Adventurer Card was Discarded
-		Test Sucessful!
-	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -6 added to Hand.
-
-Test 188:
-	Test: No More Treasure Cards to add to hand
-		Test Successful!
-	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -3 added to Hand.
-
-Test 189:
-	Test: No More Treasure Cards to add to hand
-		Test Successful!
-	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -6 added to Hand.
-
-Test 190:
 	Test: 2 Treasure cards added to hand
 		Test Failed. 3 Treasure cards were added to the hand.
 	Test: Adventurer Card was Discarded
@@ -1523,13 +1499,37 @@ Test 190:
 	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
 		Test Failed. 3 added to Hand.
 
+Test 188:
+	Test: 2 Treasure cards added to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Failed. 2 added to Hand.
+
+Test 189:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 3 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Failed. 3 added to Hand.
+
+Test 190:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -6 added to Hand.
+
 Test 191:
 	Test: No More Treasure Cards to add to hand
 		Test Successful!
 	Test: Adventurer Card was Discarded
-		Test Sucessful!
+		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -9 added to Hand.
+		Test Failed. -8 added to Hand.
 
 Test 192:
 	Test: No More Treasure Cards to add to hand
@@ -1537,23 +1537,23 @@ Test 192:
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -5 added to Hand.
+		Test Failed. -7 added to Hand.
 
 Test 193:
+	Test: Only 1 Treasure card outside of hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 0 (Added 1 Treasure Cards - Discard Adventurer)
+		Test Failed. 1 added to Hand.
+
+Test 194:
 	Test: No More Treasure Cards to add to hand
 		Test Successful!
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -7 added to Hand.
-
-Test 194:
-	Test: 2 Treasure cards added to hand
-		Test Failed. 3 Treasure cards were added to the hand.
-	Test: Adventurer Card was Discarded
-		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
-		Test Failed. 3 added to Hand.
+		Test Failed. -3 added to Hand.
 
 Test 195:
 	Test: No More Treasure Cards to add to hand
@@ -1561,7 +1561,7 @@ Test 195:
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -3 added to Hand.
+		Test Failed. 0 added to Hand.
 
 Test 196:
 	Test: 2 Treasure cards added to hand
@@ -1572,12 +1572,12 @@ Test 196:
 		Test Failed. 3 added to Hand.
 
 Test 197:
-	Test: Only 1 Treasure card outside of hand
+	Test: 2 Treasure cards added to hand
 		Test Successful!
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
-	Test: Overall Hand Count Increased by 0 (Added 1 Treasure Cards - Discard Adventurer)
-		Test Failed. 1 added to Hand.
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Failed. 2 added to Hand.
 
 Test 198:
 	Test: No More Treasure Cards to add to hand
@@ -1585,7 +1585,7 @@ Test 198:
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Sucessful!
+		Test Failed. -8 added to Hand.
 
 Test 199:
 	Test: No More Treasure Cards to add to hand
@@ -1593,7 +1593,7 @@ Test 199:
 	Test: Adventurer Card was Discarded
 		Test Failed.  Adventurer card still in Hand
 	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
-		Test Failed. -3 added to Hand.
+		Test Failed. -4 added to Hand.
 
 Test 200:
 	Test: No More Treasure Cards to add to hand
@@ -1613,7 +1613,7 @@ Test 1:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Successful!
+		Test Failed. 3 added to hand.
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -1621,7 +1621,7 @@ Test 2:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Successful!
+		Test Failed. 3 added to hand.
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -1645,7 +1645,7 @@ Test 5:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Failed. 3 added to hand.
+		Test Successful!
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -1669,7 +1669,7 @@ Test 8:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Failed. 3 added to hand.
+		Test Successful!
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -1677,7 +1677,7 @@ Test 9:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Failed. 3 added to hand.
+		Test Successful!
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -1701,7 +1701,7 @@ Test 12:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Successful!
+		Test Failed. 3 added to hand.
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -1717,7 +1717,7 @@ Test 14:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Failed. 3 added to hand.
+		Test Successful!
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -1741,7 +1741,7 @@ Test 17:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Successful!
+		Test Failed. 3 added to hand.
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -1749,7 +1749,7 @@ Test 18:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Successful!
+		Test Failed. 3 added to hand.
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -1757,7 +1757,7 @@ Test 19:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Successful!
+		Test Failed. 3 added to hand.
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -1773,7 +1773,7 @@ Test 21:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Successful!
+		Test Failed. 3 added to hand.
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -1805,7 +1805,7 @@ Test 25:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Failed. 3 added to hand.
+		Test Successful!
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -1813,7 +1813,7 @@ Test 26:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Failed. 3 added to hand.
+		Test Successful!
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -1845,7 +1845,7 @@ Test 30:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Successful!
+		Test Failed. 3 added to hand.
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -1861,7 +1861,7 @@ Test 32:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Successful!
+		Test Failed. 3 added to hand.
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -1893,7 +1893,7 @@ Test 36:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Failed. 3 added to hand.
+		Test Successful!
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -1925,7 +1925,7 @@ Test 40:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Successful!
+		Test Failed. 3 added to hand.
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -1949,7 +1949,7 @@ Test 43:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Successful!
+		Test Failed. 3 added to hand.
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -1965,7 +1965,7 @@ Test 45:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Failed. 3 added to hand.
+		Test Successful!
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -1997,7 +1997,7 @@ Test 49:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Failed. 3 added to hand.
+		Test Successful!
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2005,7 +2005,7 @@ Test 50:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Successful!
+		Test Failed. 3 added to hand.
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2013,7 +2013,7 @@ Test 51:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Failed. 3 added to hand.
+		Test Successful!
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2037,7 +2037,7 @@ Test 54:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Failed. 3 added to hand.
+		Test Successful!
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2045,7 +2045,7 @@ Test 55:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Successful!
+		Test Failed. 3 added to hand.
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2077,7 +2077,7 @@ Test 59:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Failed. 3 added to hand.
+		Test Successful!
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2101,7 +2101,7 @@ Test 62:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Successful!
+		Test Failed. 3 added to hand.
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2109,7 +2109,7 @@ Test 63:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Failed. 3 added to hand.
+		Test Successful!
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2117,7 +2117,7 @@ Test 64:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Failed. 3 added to hand.
+		Test Successful!
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2141,7 +2141,7 @@ Test 67:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Failed. 3 added to hand.
+		Test Successful!
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2149,7 +2149,7 @@ Test 68:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Failed. 3 added to hand.
+		Test Successful!
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2157,7 +2157,7 @@ Test 69:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Failed. 3 added to hand.
+		Test Successful!
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2173,7 +2173,7 @@ Test 71:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Successful!
+		Test Failed. 3 added to hand.
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2229,7 +2229,7 @@ Test 78:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Failed. 3 added to hand.
+		Test Successful!
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2253,7 +2253,7 @@ Test 81:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Successful!
+		Test Failed. 3 added to hand.
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2269,7 +2269,7 @@ Test 83:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Successful!
+		Test Failed. 3 added to hand.
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2277,7 +2277,7 @@ Test 84:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Failed. 3 added to hand.
+		Test Successful!
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2285,7 +2285,7 @@ Test 85:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Successful!
+		Test Failed. 3 added to hand.
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2293,7 +2293,7 @@ Test 86:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Failed. 3 added to hand.
+		Test Successful!
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2309,7 +2309,7 @@ Test 88:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Failed. 3 added to hand.
+		Test Successful!
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2317,7 +2317,7 @@ Test 89:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Successful!
+		Test Failed. 3 added to hand.
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2325,7 +2325,7 @@ Test 90:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Failed. 3 added to hand.
+		Test Successful!
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2333,7 +2333,7 @@ Test 91:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Successful!
+		Test Failed. 3 added to hand.
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2341,7 +2341,7 @@ Test 92:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Successful!
+		Test Failed. 3 added to hand.
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2357,7 +2357,7 @@ Test 94:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Failed. 3 added to hand.
+		Test Successful!
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2373,7 +2373,7 @@ Test 96:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Successful!
+		Test Failed. 3 added to hand.
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2389,7 +2389,7 @@ Test 98:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Failed. 3 added to hand.
+		Test Successful!
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2397,7 +2397,7 @@ Test 99:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Failed. 3 added to hand.
+		Test Successful!
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2413,7 +2413,7 @@ Test 101:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Successful!
+		Test Failed. 3 added to hand.
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2453,7 +2453,7 @@ Test 106:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Failed. 3 added to hand.
+		Test Successful!
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2469,7 +2469,7 @@ Test 108:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Successful!
+		Test Failed. 3 added to hand.
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2477,7 +2477,7 @@ Test 109:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Successful!
+		Test Failed. 3 added to hand.
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2533,7 +2533,7 @@ Test 116:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Failed. 3 added to hand.
+		Test Successful!
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2557,7 +2557,7 @@ Test 119:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Successful!
+		Test Failed. 3 added to hand.
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2565,7 +2565,7 @@ Test 120:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Successful!
+		Test Failed. 3 added to hand.
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2597,7 +2597,7 @@ Test 124:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Failed. 3 added to hand.
+		Test Successful!
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2605,7 +2605,7 @@ Test 125:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Failed. 3 added to hand.
+		Test Successful!
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2621,7 +2621,7 @@ Test 127:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Successful!
+		Test Failed. 3 added to hand.
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2645,7 +2645,7 @@ Test 130:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Failed. 3 added to hand.
+		Test Successful!
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2661,7 +2661,7 @@ Test 132:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Failed. 3 added to hand.
+		Test Successful!
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2685,7 +2685,7 @@ Test 135:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Successful!
+		Test Failed. 3 added to hand.
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2701,7 +2701,7 @@ Test 137:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Successful!
+		Test Failed. 3 added to hand.
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2709,7 +2709,7 @@ Test 138:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Failed. 3 added to hand.
+		Test Successful!
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2733,7 +2733,7 @@ Test 141:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Failed. 3 added to hand.
+		Test Successful!
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2749,7 +2749,7 @@ Test 143:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Successful!
+		Test Failed. 3 added to hand.
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2781,7 +2781,7 @@ Test 147:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Successful!
+		Test Failed. 3 added to hand.
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2789,7 +2789,7 @@ Test 148:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Failed. 3 added to hand.
+		Test Successful!
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2813,7 +2813,7 @@ Test 151:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Successful!
+		Test Failed. 3 added to hand.
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2837,7 +2837,7 @@ Test 154:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Successful!
+		Test Failed. 3 added to hand.
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2845,7 +2845,7 @@ Test 155:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Successful!
+		Test Failed. 3 added to hand.
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2869,7 +2869,7 @@ Test 158:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Failed. 3 added to hand.
+		Test Successful!
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2901,7 +2901,7 @@ Test 162:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Failed. 3 added to hand.
+		Test Successful!
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2941,7 +2941,7 @@ Test 167:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Failed. 3 added to hand.
+		Test Successful!
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2957,7 +2957,7 @@ Test 169:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Failed. 3 added to hand.
+		Test Successful!
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2965,7 +2965,7 @@ Test 170:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Successful!
+		Test Failed. 3 added to hand.
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2973,7 +2973,7 @@ Test 171:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Failed. 3 added to hand.
+		Test Successful!
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2981,7 +2981,7 @@ Test 172:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Successful!
+		Test Failed. 3 added to hand.
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -2997,7 +2997,7 @@ Test 174:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Successful!
+		Test Failed. 3 added to hand.
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -3005,7 +3005,7 @@ Test 175:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Failed. 3 added to hand.
+		Test Successful!
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -3029,7 +3029,7 @@ Test 178:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Successful!
+		Test Failed. 3 added to hand.
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -3037,7 +3037,7 @@ Test 179:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Failed. 3 added to hand.
+		Test Successful!
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -3045,7 +3045,7 @@ Test 180:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Failed. 3 added to hand.
+		Test Successful!
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -3069,7 +3069,7 @@ Test 183:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Successful!
+		Test Failed. 3 added to hand.
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -3077,7 +3077,7 @@ Test 184:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Failed. 3 added to hand.
+		Test Successful!
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -3109,7 +3109,7 @@ Test 188:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Failed. 3 added to hand.
+		Test Successful!
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -3117,7 +3117,7 @@ Test 189:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Successful!
+		Test Failed. 3 added to hand.
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -3157,7 +3157,7 @@ Test 194:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Successful!
+		Test Failed. 3 added to hand.
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -3173,7 +3173,7 @@ Test 196:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Successful!
+		Test Failed. 3 added to hand.
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 
@@ -3205,7 +3205,7 @@ Test 200:
 	Test: 3 cards removed from Deck
 		Test Successful!
 	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
-		Test Successful!
+		Test Failed. 3 added to hand.
 	Test: Smithy is discarded
 		Test Failed. Smithy is still in hand.
 File 'dominion.c'
@@ -3221,7 +3221,7 @@ Test 1:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 
@@ -3231,11 +3231,10 @@ Test 2:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
-		Test Successful for Player 4!
 
 Test 3:
 	Test: 4 cards removed from Deck
@@ -3243,9 +3242,10 @@ Test 3:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
+		Test Successful for Player 3!
 
 Test 4:
 	Test: 4 cards removed from Deck
@@ -3253,11 +3253,9 @@ Test 4:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
-		Test Successful for Player 3!
-		Test Successful for Player 4!
 
 Test 5:
 	Test: 4 cards removed from Deck
@@ -3268,7 +3266,6 @@ Test 5:
 		Test Failed. Council Room was discarded incorrectly.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
-		Test Successful for Player 3!
 
 Test 6:
 	Test: 4 cards removed from Deck
@@ -3276,9 +3273,11 @@ Test 6:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
+		Test Successful for Player 3!
+		Test Successful for Player 4!
 
 Test 7:
 	Test: 4 cards removed from Deck
@@ -3286,9 +3285,10 @@ Test 7:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
+		Test Successful for Player 3!
 
 Test 8:
 	Test: 4 cards removed from Deck
@@ -3296,11 +3296,10 @@ Test 8:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
-		Test Successful for Player 4!
 
 Test 9:
 	Test: 4 cards removed from Deck
@@ -3308,10 +3307,11 @@ Test 9:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
+		Test Successful for Player 4!
 
 Test 10:
 	Test: 4 cards removed from Deck
@@ -3319,9 +3319,10 @@ Test 10:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
+		Test Successful for Player 3!
 
 Test 11:
 	Test: 4 cards removed from Deck
@@ -3329,11 +3330,10 @@ Test 11:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
-		Test Successful for Player 4!
 
 Test 12:
 	Test: 4 cards removed from Deck
@@ -3341,7 +3341,7 @@ Test 12:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
@@ -3353,21 +3353,12 @@ Test 13:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
+		Test Successful for Player 3!
 
 Test 14:
-	Test: 4 cards removed from Deck
-		Test Successful!
-	Test: Number of Buy increases by 1
-		Test Failed.  Num Buys = 0
-	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
-	Test: Each Player Draws a Card
-		Test Successful for Player 2!
-
-Test 15:
 	Test: 4 cards removed from Deck
 		Test Successful!
 	Test: Number of Buy increases by 1
@@ -3379,15 +3370,27 @@ Test 15:
 		Test Successful for Player 3!
 		Test Successful for Player 4!
 
+Test 15:
+	Test: 4 cards removed from Deck
+		Test Successful!
+	Test: Number of Buy increases by 1
+		Test Failed.  Num Buys = 0
+	Test: Council Room is discarded
+		Test Failed. Council Room is still in hand.
+	Test: Each Player Draws a Card
+		Test Successful for Player 2!
+		Test Successful for Player 3!
+
 Test 16:
 	Test: 4 cards removed from Deck
 		Test Successful!
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
+		Test Successful for Player 3!
 
 Test 17:
 	Test: 4 cards removed from Deck
@@ -3395,10 +3398,9 @@ Test 17:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
-		Test Successful for Player 3!
 
 Test 18:
 	Test: 4 cards removed from Deck
@@ -3406,7 +3408,7 @@ Test 18:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
@@ -3418,7 +3420,7 @@ Test 19:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
@@ -3429,7 +3431,7 @@ Test 20:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
@@ -3441,11 +3443,10 @@ Test 21:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
-		Test Successful for Player 4!
 
 Test 22:
 	Test: 4 cards removed from Deck
@@ -3453,7 +3454,7 @@ Test 22:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 
@@ -3463,10 +3464,11 @@ Test 23:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
+		Test Successful for Player 4!
 
 Test 24:
 	Test: 4 cards removed from Deck
@@ -3474,9 +3476,11 @@ Test 24:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
+		Test Successful for Player 3!
+		Test Successful for Player 4!
 
 Test 25:
 	Test: 4 cards removed from Deck
@@ -3484,10 +3488,11 @@ Test 25:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
+		Test Successful for Player 4!
 
 Test 26:
 	Test: 4 cards removed from Deck
@@ -3495,11 +3500,10 @@ Test 26:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
-		Test Successful for Player 4!
 
 Test 27:
 	Test: 4 cards removed from Deck
@@ -3507,9 +3511,11 @@ Test 27:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
+		Test Successful for Player 3!
+		Test Successful for Player 4!
 
 Test 28:
 	Test: 4 cards removed from Deck
@@ -3517,9 +3523,10 @@ Test 28:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
+		Test Successful for Player 3!
 
 Test 29:
 	Test: 4 cards removed from Deck
@@ -3530,7 +3537,6 @@ Test 29:
 		Test Failed. Council Room was discarded incorrectly.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
-		Test Successful for Player 3!
 
 Test 30:
 	Test: 4 cards removed from Deck
@@ -3538,7 +3544,7 @@ Test 30:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
@@ -3553,6 +3559,7 @@ Test 31:
 		Test Failed. Council Room was discarded incorrectly.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
+		Test Successful for Player 3!
 
 Test 32:
 	Test: 4 cards removed from Deck
@@ -3560,7 +3567,7 @@ Test 32:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 
@@ -3582,7 +3589,7 @@ Test 34:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
@@ -3597,7 +3604,6 @@ Test 35:
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
-		Test Successful for Player 4!
 
 Test 36:
 	Test: 4 cards removed from Deck
@@ -3605,9 +3611,10 @@ Test 36:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
+		Test Successful for Player 3!
 
 Test 37:
 	Test: 4 cards removed from Deck
@@ -3615,11 +3622,9 @@ Test 37:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
-		Test Successful for Player 3!
-		Test Successful for Player 4!
 
 Test 38:
 	Test: 4 cards removed from Deck
@@ -3630,8 +3635,6 @@ Test 38:
 		Test Failed. Council Room was discarded incorrectly.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
-		Test Successful for Player 3!
-		Test Successful for Player 4!
 
 Test 39:
 	Test: 4 cards removed from Deck
@@ -3639,7 +3642,7 @@ Test 39:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
@@ -3650,7 +3653,7 @@ Test 40:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
@@ -3661,7 +3664,7 @@ Test 41:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
@@ -3672,7 +3675,7 @@ Test 42:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
@@ -3683,10 +3686,11 @@ Test 43:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
+		Test Successful for Player 4!
 
 Test 44:
 	Test: 4 cards removed from Deck
@@ -3694,11 +3698,10 @@ Test 44:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
-		Test Successful for Player 4!
 
 Test 45:
 	Test: 4 cards removed from Deck
@@ -3706,11 +3709,10 @@ Test 45:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
-		Test Successful for Player 4!
 
 Test 46:
 	Test: 4 cards removed from Deck
@@ -3733,6 +3735,7 @@ Test 47:
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
+		Test Successful for Player 4!
 
 Test 48:
 	Test: 4 cards removed from Deck
@@ -3752,7 +3755,7 @@ Test 49:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 
@@ -3766,7 +3769,6 @@ Test 50:
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
-		Test Successful for Player 4!
 
 Test 51:
 	Test: 4 cards removed from Deck
@@ -3778,6 +3780,7 @@ Test 51:
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
+		Test Successful for Player 4!
 
 Test 52:
 	Test: 4 cards removed from Deck
@@ -3785,11 +3788,9 @@ Test 52:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
-		Test Successful for Player 3!
-		Test Successful for Player 4!
 
 Test 53:
 	Test: 4 cards removed from Deck
@@ -3797,9 +3798,10 @@ Test 53:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
+		Test Successful for Player 3!
 
 Test 54:
 	Test: 4 cards removed from Deck
@@ -3807,11 +3809,9 @@ Test 54:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
-		Test Successful for Player 3!
-		Test Successful for Player 4!
 
 Test 55:
 	Test: 4 cards removed from Deck
@@ -3823,7 +3823,6 @@ Test 55:
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
-		Test Successful for Player 4!
 
 Test 56:
 	Test: 4 cards removed from Deck
@@ -3834,6 +3833,7 @@ Test 56:
 		Test Failed. Council Room was discarded incorrectly.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
+		Test Successful for Player 3!
 
 Test 57:
 	Test: 4 cards removed from Deck
@@ -3845,6 +3845,7 @@ Test 57:
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
+		Test Successful for Player 4!
 
 Test 58:
 	Test: 4 cards removed from Deck
@@ -3855,8 +3856,6 @@ Test 58:
 		Test Failed. Council Room was discarded incorrectly.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
-		Test Successful for Player 3!
-		Test Successful for Player 4!
 
 Test 59:
 	Test: 4 cards removed from Deck
@@ -3864,7 +3863,7 @@ Test 59:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 
@@ -3874,10 +3873,11 @@ Test 60:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
+		Test Successful for Player 4!
 
 Test 61:
 	Test: 4 cards removed from Deck
@@ -3885,10 +3885,11 @@ Test 61:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
+		Test Successful for Player 4!
 
 Test 62:
 	Test: 4 cards removed from Deck
@@ -3896,10 +3897,9 @@ Test 62:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
-		Test Successful for Player 3!
 
 Test 63:
 	Test: 4 cards removed from Deck
@@ -3917,7 +3917,7 @@ Test 64:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 
@@ -3927,9 +3927,11 @@ Test 65:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
+		Test Successful for Player 3!
+		Test Successful for Player 4!
 
 Test 66:
 	Test: 4 cards removed from Deck
@@ -3937,11 +3939,10 @@ Test 66:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
-		Test Successful for Player 4!
 
 Test 67:
 	Test: 4 cards removed from Deck
@@ -3971,11 +3972,10 @@ Test 69:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
-		Test Successful for Player 4!
 
 Test 70:
 	Test: 4 cards removed from Deck
@@ -3983,7 +3983,7 @@ Test 70:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
@@ -3998,8 +3998,6 @@ Test 71:
 		Test Failed. Council Room was discarded incorrectly.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
-		Test Successful for Player 3!
-		Test Successful for Player 4!
 
 Test 72:
 	Test: 4 cards removed from Deck
@@ -4010,7 +4008,6 @@ Test 72:
 		Test Failed. Council Room was discarded incorrectly.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
-		Test Successful for Player 3!
 
 Test 73:
 	Test: 4 cards removed from Deck
@@ -4021,6 +4018,7 @@ Test 73:
 		Test Failed. Council Room was discarded incorrectly.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
+		Test Successful for Player 3!
 
 Test 74:
 	Test: 4 cards removed from Deck
@@ -4028,11 +4026,10 @@ Test 74:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
-		Test Successful for Player 4!
 
 Test 75:
 	Test: 4 cards removed from Deck
@@ -4040,9 +4037,10 @@ Test 75:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
+		Test Successful for Player 3!
 
 Test 76:
 	Test: 4 cards removed from Deck
@@ -4060,9 +4058,10 @@ Test 77:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
+		Test Successful for Player 3!
 
 Test 78:
 	Test: 4 cards removed from Deck
@@ -4070,9 +4069,10 @@ Test 78:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
+		Test Successful for Player 3!
 
 Test 79:
 	Test: 4 cards removed from Deck
@@ -4080,7 +4080,7 @@ Test 79:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
@@ -4091,7 +4091,7 @@ Test 80:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
@@ -4103,7 +4103,7 @@ Test 81:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
@@ -4115,10 +4115,11 @@ Test 82:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
+		Test Successful for Player 4!
 
 Test 83:
 	Test: 4 cards removed from Deck
@@ -4126,11 +4127,9 @@ Test 83:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
-		Test Successful for Player 3!
-		Test Successful for Player 4!
 
 Test 84:
 	Test: 4 cards removed from Deck
@@ -4150,10 +4149,9 @@ Test 85:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
-		Test Successful for Player 3!
 
 Test 86:
 	Test: 4 cards removed from Deck
@@ -4177,6 +4175,7 @@ Test 87:
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
+		Test Successful for Player 4!
 
 Test 88:
 	Test: 4 cards removed from Deck
@@ -4184,9 +4183,11 @@ Test 88:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
+		Test Successful for Player 3!
+		Test Successful for Player 4!
 
 Test 89:
 	Test: 4 cards removed from Deck
@@ -4204,11 +4205,9 @@ Test 90:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
-		Test Successful for Player 3!
-		Test Successful for Player 4!
 
 Test 91:
 	Test: 4 cards removed from Deck
@@ -4216,7 +4215,7 @@ Test 91:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
@@ -4231,6 +4230,7 @@ Test 92:
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
+		Test Successful for Player 4!
 
 Test 93:
 	Test: 4 cards removed from Deck
@@ -4238,7 +4238,7 @@ Test 93:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
@@ -4264,8 +4264,6 @@ Test 95:
 		Test Failed. Council Room was discarded incorrectly.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
-		Test Successful for Player 3!
-		Test Successful for Player 4!
 
 Test 96:
 	Test: 4 cards removed from Deck
@@ -4273,7 +4271,7 @@ Test 96:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
@@ -4289,7 +4287,6 @@ Test 97:
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
-		Test Successful for Player 4!
 
 Test 98:
 	Test: 4 cards removed from Deck
@@ -4297,11 +4294,9 @@ Test 98:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
-		Test Successful for Player 3!
-		Test Successful for Player 4!
 
 Test 99:
 	Test: 4 cards removed from Deck
@@ -4309,9 +4304,10 @@ Test 99:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
+		Test Successful for Player 3!
 
 Test 100:
 	Test: 4 cards removed from Deck
@@ -4319,10 +4315,9 @@ Test 100:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
-		Test Successful for Player 3!
 
 Test 101:
 	Test: 4 cards removed from Deck
@@ -4330,7 +4325,7 @@ Test 101:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
@@ -4345,8 +4340,6 @@ Test 102:
 		Test Failed. Council Room was discarded incorrectly.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
-		Test Successful for Player 3!
-		Test Successful for Player 4!
 
 Test 103:
 	Test: 4 cards removed from Deck
@@ -4354,7 +4347,7 @@ Test 103:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
@@ -4365,9 +4358,10 @@ Test 104:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
+		Test Successful for Player 3!
 
 Test 105:
 	Test: 4 cards removed from Deck
@@ -4375,9 +4369,10 @@ Test 105:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
+		Test Successful for Player 3!
 
 Test 106:
 	Test: 4 cards removed from Deck
@@ -4396,10 +4391,11 @@ Test 107:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
+		Test Successful for Player 4!
 
 Test 108:
 	Test: 4 cards removed from Deck
@@ -4407,7 +4403,7 @@ Test 108:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
@@ -4418,10 +4414,11 @@ Test 109:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
+		Test Successful for Player 4!
 
 Test 110:
 	Test: 4 cards removed from Deck
@@ -4433,6 +4430,7 @@ Test 110:
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
+		Test Successful for Player 4!
 
 Test 111:
 	Test: 4 cards removed from Deck
@@ -4440,10 +4438,9 @@ Test 111:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
-		Test Successful for Player 3!
 
 Test 112:
 	Test: 4 cards removed from Deck
@@ -4451,9 +4448,11 @@ Test 112:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
+		Test Successful for Player 3!
+		Test Successful for Player 4!
 
 Test 113:
 	Test: 4 cards removed from Deck
@@ -4461,9 +4460,10 @@ Test 113:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
+		Test Successful for Player 3!
 
 Test 114:
 	Test: 4 cards removed from Deck
@@ -4475,7 +4475,6 @@ Test 114:
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
-		Test Successful for Player 4!
 
 Test 115:
 	Test: 4 cards removed from Deck
@@ -4483,11 +4482,10 @@ Test 115:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
-		Test Successful for Player 4!
 
 Test 116:
 	Test: 4 cards removed from Deck
@@ -4498,7 +4496,6 @@ Test 116:
 		Test Failed. Council Room was discarded incorrectly.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
-		Test Successful for Player 3!
 
 Test 117:
 	Test: 4 cards removed from Deck
@@ -4506,11 +4503,10 @@ Test 117:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
-		Test Successful for Player 4!
 
 Test 118:
 	Test: 4 cards removed from Deck
@@ -4518,7 +4514,7 @@ Test 118:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
@@ -4529,11 +4525,10 @@ Test 119:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
-		Test Successful for Player 4!
 
 Test 120:
 	Test: 4 cards removed from Deck
@@ -4541,7 +4536,7 @@ Test 120:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
@@ -4553,7 +4548,7 @@ Test 121:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
@@ -4568,7 +4563,6 @@ Test 122:
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
-		Test Successful for Player 4!
 
 Test 123:
 	Test: 4 cards removed from Deck
@@ -4588,7 +4582,7 @@ Test 124:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
@@ -4602,8 +4596,6 @@ Test 125:
 		Test Failed. Council Room was discarded incorrectly.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
-		Test Successful for Player 3!
-		Test Successful for Player 4!
 
 Test 126:
 	Test: 4 cards removed from Deck
@@ -4611,9 +4603,11 @@ Test 126:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
+		Test Successful for Player 3!
+		Test Successful for Player 4!
 
 Test 127:
 	Test: 4 cards removed from Deck
@@ -4621,9 +4615,10 @@ Test 127:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
+		Test Successful for Player 3!
 
 Test 128:
 	Test: 4 cards removed from Deck
@@ -4631,7 +4626,7 @@ Test 128:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 
@@ -4641,10 +4636,9 @@ Test 129:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
-		Test Successful for Player 3!
 
 Test 130:
 	Test: 4 cards removed from Deck
@@ -4652,7 +4646,7 @@ Test 130:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
@@ -4675,7 +4669,7 @@ Test 132:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 
@@ -4685,10 +4679,11 @@ Test 133:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
+		Test Successful for Player 4!
 
 Test 134:
 	Test: 4 cards removed from Deck
@@ -4696,7 +4691,7 @@ Test 134:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
@@ -4718,7 +4713,7 @@ Test 136:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
@@ -4729,9 +4724,11 @@ Test 137:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
+		Test Successful for Player 3!
+		Test Successful for Player 4!
 
 Test 138:
 	Test: 4 cards removed from Deck
@@ -4739,7 +4736,7 @@ Test 138:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 
@@ -4749,7 +4746,7 @@ Test 139:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 
@@ -4759,10 +4756,9 @@ Test 140:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
-		Test Successful for Player 3!
 
 Test 141:
 	Test: 4 cards removed from Deck
@@ -4783,7 +4779,6 @@ Test 142:
 		Test Failed. Council Room was discarded incorrectly.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
-		Test Successful for Player 3!
 
 Test 143:
 	Test: 4 cards removed from Deck
@@ -4791,7 +4786,7 @@ Test 143:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
@@ -4803,7 +4798,7 @@ Test 144:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
@@ -4817,6 +4812,8 @@ Test 145:
 		Test Failed. Council Room was discarded incorrectly.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
+		Test Successful for Player 3!
+		Test Successful for Player 4!
 
 Test 146:
 	Test: 4 cards removed from Deck
@@ -4824,7 +4821,7 @@ Test 146:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 
@@ -4834,11 +4831,9 @@ Test 147:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
-		Test Successful for Player 3!
-		Test Successful for Player 4!
 
 Test 148:
 	Test: 4 cards removed from Deck
@@ -4846,7 +4841,7 @@ Test 148:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 
@@ -4870,6 +4865,8 @@ Test 150:
 		Test Failed. Council Room was discarded incorrectly.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
+		Test Successful for Player 3!
+		Test Successful for Player 4!
 
 Test 151:
 	Test: 4 cards removed from Deck
@@ -4877,9 +4874,10 @@ Test 151:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
+		Test Successful for Player 3!
 
 Test 152:
 	Test: 4 cards removed from Deck
@@ -4887,7 +4885,7 @@ Test 152:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 
@@ -4897,9 +4895,11 @@ Test 153:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
+		Test Successful for Player 3!
+		Test Successful for Player 4!
 
 Test 154:
 	Test: 4 cards removed from Deck
@@ -4907,7 +4907,7 @@ Test 154:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
@@ -4919,10 +4919,9 @@ Test 155:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
-		Test Successful for Player 3!
 
 Test 156:
 	Test: 4 cards removed from Deck
@@ -4930,11 +4929,10 @@ Test 156:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
-		Test Successful for Player 4!
 
 Test 157:
 	Test: 4 cards removed from Deck
@@ -4945,8 +4943,6 @@ Test 157:
 		Test Failed. Council Room was discarded incorrectly.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
-		Test Successful for Player 3!
-		Test Successful for Player 4!
 
 Test 158:
 	Test: 4 cards removed from Deck
@@ -4954,10 +4950,11 @@ Test 158:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
+		Test Successful for Player 4!
 
 Test 159:
 	Test: 4 cards removed from Deck
@@ -4965,9 +4962,10 @@ Test 159:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
+		Test Successful for Player 3!
 
 Test 160:
 	Test: 4 cards removed from Deck
@@ -4975,10 +4973,9 @@ Test 160:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
-		Test Successful for Player 3!
 
 Test 161:
 	Test: 4 cards removed from Deck
@@ -4986,10 +4983,11 @@ Test 161:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
+		Test Successful for Player 4!
 
 Test 162:
 	Test: 4 cards removed from Deck
@@ -4997,7 +4995,7 @@ Test 162:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
@@ -5009,11 +5007,10 @@ Test 163:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
-		Test Successful for Player 4!
 
 Test 164:
 	Test: 4 cards removed from Deck
@@ -5021,7 +5018,7 @@ Test 164:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
@@ -5032,7 +5029,7 @@ Test 165:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
@@ -5044,10 +5041,9 @@ Test 166:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
-		Test Successful for Player 3!
 
 Test 167:
 	Test: 4 cards removed from Deck
@@ -5055,9 +5051,11 @@ Test 167:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
+		Test Successful for Player 3!
+		Test Successful for Player 4!
 
 Test 168:
 	Test: 4 cards removed from Deck
@@ -5068,8 +5066,6 @@ Test 168:
 		Test Failed. Council Room was discarded incorrectly.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
-		Test Successful for Player 3!
-		Test Successful for Player 4!
 
 Test 169:
 	Test: 4 cards removed from Deck
@@ -5077,11 +5073,10 @@ Test 169:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
-		Test Successful for Player 4!
 
 Test 170:
 	Test: 4 cards removed from Deck
@@ -5089,7 +5084,7 @@ Test 170:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
@@ -5101,7 +5096,7 @@ Test 171:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
@@ -5113,11 +5108,9 @@ Test 172:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
-		Test Successful for Player 3!
-		Test Successful for Player 4!
 
 Test 173:
 	Test: 4 cards removed from Deck
@@ -5128,7 +5121,6 @@ Test 173:
 		Test Failed. Council Room was discarded incorrectly.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
-		Test Successful for Player 3!
 
 Test 174:
 	Test: 4 cards removed from Deck
@@ -5136,7 +5128,7 @@ Test 174:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 
@@ -5146,9 +5138,11 @@ Test 175:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
+		Test Successful for Player 3!
+		Test Successful for Player 4!
 
 Test 176:
 	Test: 4 cards removed from Deck
@@ -5156,7 +5150,7 @@ Test 176:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
@@ -5168,11 +5162,9 @@ Test 177:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
-		Test Successful for Player 3!
-		Test Successful for Player 4!
 
 Test 178:
 	Test: 4 cards removed from Deck
@@ -5180,10 +5172,11 @@ Test 178:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
+		Test Successful for Player 4!
 
 Test 179:
 	Test: 4 cards removed from Deck
@@ -5203,10 +5196,11 @@ Test 180:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
+		Test Successful for Player 4!
 
 Test 181:
 	Test: 4 cards removed from Deck
@@ -5217,6 +5211,8 @@ Test 181:
 		Test Failed. Council Room was discarded incorrectly.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
+		Test Successful for Player 3!
+		Test Successful for Player 4!
 
 Test 182:
 	Test: 4 cards removed from Deck
@@ -5228,6 +5224,7 @@ Test 182:
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
+		Test Successful for Player 4!
 
 Test 183:
 	Test: 4 cards removed from Deck
@@ -5235,10 +5232,9 @@ Test 183:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
-		Test Successful for Player 3!
 
 Test 184:
 	Test: 4 cards removed from Deck
@@ -5268,11 +5264,9 @@ Test 186:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
-		Test Successful for Player 3!
-		Test Successful for Player 4!
 
 Test 187:
 	Test: 4 cards removed from Deck
@@ -5280,7 +5274,7 @@ Test 187:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
@@ -5292,9 +5286,11 @@ Test 188:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
+		Test Successful for Player 3!
+		Test Successful for Player 4!
 
 Test 189:
 	Test: 4 cards removed from Deck
@@ -5305,7 +5301,6 @@ Test 189:
 		Test Failed. Council Room was discarded incorrectly.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
-		Test Successful for Player 3!
 
 Test 190:
 	Test: 4 cards removed from Deck
@@ -5313,7 +5308,7 @@ Test 190:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 
@@ -5323,11 +5318,10 @@ Test 191:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
-		Test Successful for Player 4!
 
 Test 192:
 	Test: 4 cards removed from Deck
@@ -5335,10 +5329,11 @@ Test 192:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
+		Test Successful for Player 4!
 
 Test 193:
 	Test: 4 cards removed from Deck
@@ -5346,9 +5341,11 @@ Test 193:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
+		Test Successful for Player 3!
+		Test Successful for Player 4!
 
 Test 194:
 	Test: 4 cards removed from Deck
@@ -5356,7 +5353,7 @@ Test 194:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
@@ -5367,10 +5364,11 @@ Test 195:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
+		Test Successful for Player 4!
 
 Test 196:
 	Test: 4 cards removed from Deck
@@ -5378,10 +5376,11 @@ Test 196:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
+		Test Successful for Player 4!
 
 Test 197:
 	Test: 4 cards removed from Deck
@@ -5399,11 +5398,9 @@ Test 198:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
-		Test Successful for Player 3!
-		Test Successful for Player 4!
 
 Test 199:
 	Test: 4 cards removed from Deck
@@ -5422,12 +5419,12 @@ Test 200:
 	Test: Number of Buy increases by 1
 		Test Failed.  Num Buys = 0
 	Test: Council Room is discarded
-		Test Failed. Council Room was discarded incorrectly.
+		Test Failed. Council Room is still in hand.
 	Test: Each Player Draws a Card
 		Test Successful for Player 2!
 		Test Successful for Player 3!
 		Test Successful for Player 4!
 File 'dominion.c'
-Lines executed:22.61% of 566
+Lines executed:22.79% of 566
 Creating 'dominion.c.gcov'
 

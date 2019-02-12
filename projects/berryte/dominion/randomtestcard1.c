@@ -59,7 +59,7 @@ int main(){
 		}
 
 		//Play Smithy
-		playSmithy(&testGame, 0, 0);
+		playSmithy(&testGame, rand() % testGame.handCount[0], 0);
 		
 		//Run Tests
 		printf("\tTest: 3 cards removed from Deck\n");

@@ -59,7 +59,7 @@ int main(){
 		}
 
 		//Play Council Room
-		playCRoom(&testGame, 0, 0);
+		playCRoom(&testGame, 0, rand() % testGame.handCount[0]);
 
 		//Run Tests
 		printf("\tTest: 4 cards removed from Deck\n");
