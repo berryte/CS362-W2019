@@ -31,12 +31,12 @@ int main(){
 	printf("\n------------ Testing Random Adventurer Card Function -------------\n");
 	while(numTests != 200){
 		printf("\nTest %d:\n", numTests + 1);
-		int temp[MAX_HAND]; //should be refactored out as a parameter
+		//int temp[MAX_HAND]; //should be refactored out as a parameter
 		int numPlayers = randomNum(2, MAX_PLAYERS); //can only accept 2-4 players
 		//start game
 		struct gameState testGame;
 		initializeGame(numPlayers, cards, 1000, &testGame);
-		
+		testGame.whoseTurn = 0;
 		//Random Card Numbers and how many in each pile
 		int cardSize = 10; //we initially start with 10 cards 
 		int numHand = randomNum(1, cardSize); //number of cards in hand (1 to cardSize)
@@ -158,7 +158,7 @@ int main(){
                         }
                 }
 		//PlayAdventurer for first player becaus it is the same as all the others
-		playAdventurer(&testGame, 0, temp);
+		adventurerEffect(&testGame);
 
 		int handTreasures = 0;
 		//New Hand treasure count

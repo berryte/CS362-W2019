@@ -34,7 +34,7 @@ int main(){
 		//start game
 		struct gameState testGame;
 		initializeGame(numPlayers, cards, 1000, &testGame);
-
+		testGame.whoseTurn = 0;
 		//Random Card Numbers and how many in each pile
 		int cardSize = 10; //we initially start with 10 cards 
 		int numHand = randomNum(1, cardSize); //number of cards in hand (1 to cardSize)
@@ -59,7 +59,7 @@ int main(){
 		}
 
 		//Play Smithy
-		playSmithy(&testGame, rand() % testGame.handCount[0], 0);
+		smithyEffect(&testGame, rand() % testGame.handCount[0]);
 		
 		//Run Tests
 		printf("\tTest: 3 cards removed from Deck\n");

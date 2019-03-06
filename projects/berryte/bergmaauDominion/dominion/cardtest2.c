@@ -24,6 +24,7 @@ int main(){
 	int cards[10] = {adventurer, smithy, council_room, mine, village, embargo, cutpurse, steward, remodel, feast}; 
 	//start the game
 	int game1 = initializeGame(numPlayers, cards, seed, &test1);
+	test1.whoseTurn = player;
 	assert(game1 == 0);
 
 	printf("\n------------ Testing Smithy Card Function -------------\n");
@@ -33,7 +34,8 @@ int main(){
 	int sHand = test1.handCount[player]; //starting hand count
 	int sDeck =  test1.deckCount[player]; // starting deck count
 	int sDiscard =  test1.discardCount[player]; //starting discard count
-	playSmithy(&test1, 0, player);
+	
+	smithyEffect(&test1, 0);
 	
 	//verfiy 3 cards were drawn from the deck 
 	if(sDeck - test1.deckCount[player] == 3){
@@ -57,7 +59,7 @@ int main(){
 	  deplete the deck 5 + 2 (after discarded smithy) + 2( after discarded smithy) = 9.  
 	  There should be a smithy in the discard. 
 	*/
-	playSmithy(&test1, 0, player);
+	smithyEffect(&test1, 0);
 	if(test1.handCount[player] == 9 && test1.deckCount[player] == 0 && test1.discard[player][0] == smithy){
 		printf("Test Pass\n");
 	}

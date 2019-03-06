@@ -35,17 +35,50 @@ player: player.c interface.o
 
 all: playdom player 
 
-randomTest: dominion.h rngs.o dominion.c randomtestcard1.c randomtestcard2.c randomtestadventurer.c
-	echo -e "Running Random Test Suite on Dominion...\n" > randomtestresults.out
+allTests: dominion.h rngs.o dominion.c cardtest1.c cardtest2.c randomtestcard1.c randomtestadventurer.c unittest1.c unittest2.c unittest3.c unittest4.c
+	echo -e "Running Test Suite on Dominion...\n" > unittestresults.out
+	gcc -o unittest1 dominion.c rngs.o unittest1.c $(CFLAGS)
+	./unittest1 >> unittestresults.out
+	gcov dominion.c >> unittestresults.out
+	#cat dominion.c.gcov >> unittestresults.out
+	gcc -o unittest2 dominion.c rngs.o unittest2.c $(CFLAGS)
+	./unittest2 >> unittestresults.out
+	gcov dominion.c >> unittestresults.out
+	#cat dominion.c.gcov >> unittestresults.out
+	gcc -o unittest3 dominion.c rngs.o unittest3.c $(CFLAGS)
+	./unittest3 >> unittestresults.out
+	gcov dominion.c >> unittestresults.out
+	#cat dominion.c.gcov >> unittestresults.out
+	gcc -o unittest4 dominion.c rngs.o unittest4.c $(CFLAGS)
+	./unittest4 >> unittestresults.out
+	gcov dominion.c >> unittestresults.out
+	#cat dominion.c.gcov >> unittestresults.out
+	gcc -o cardtest1 dominion.c rngs.o cardtest1.c $(CFLAGS)
+	./cardtest1 >> unittestresults.out
+	gcov dominion.c >> unittestresults.out
+	#cat dominion.c.gcov >> unittestresults.out
+	gcc -o cardtest2 dominion.c rngs.o cardtest2.c $(CFLAGS)
+	./cardtest2 >> unittestresults.out
+	gcov dominion.c >> unittestresults.out
+	#cat dominion.c.gcov >> unittestresults.out
+	#gcc -o cardtest3 dominion.c rngs.o cardtest3.c $(CFLAGS)
+	#./cardtest3 >> unittestresults.out
+	#gcov dominion.c >> unittestresults.out
+	#cat dominion.c.gcov >> unittestresults.out
+	#gcc -o cardtest4 dominion.c rngs.o cardtest4.c $(CFLAGS)
+	#./cardtest4 >> unittestresults.out
+	#gcov dominion.c >> unittestresults.out
+	#cat dominion.c.gcov >> unittestresults.out
 	gcc -o randomTestAdventurer dominion.c rngs.o randomtestadventurer.c $(CFLAGS)
-	./randomTestAdventurer >> randomtestresults.out
-	gcov dominion.c >> randomtestresults.out
+	./randomTestAdventurer >> unittestresults.out
+	gcov dominion.c >> unittestresults.out
 	gcc -o randomTest1 dominion.c rngs.o randomtestcard1.c $(CFLAGS)
-	./randomTest1 >> randomtestresults.out
-	gcov dominion.c >> randomtestresults.out
-	gcc -o randomTest2 dominion.c rngs.o randomtestcard2.c $(CFLAGS)
-	./randomTest2 >> randomtestresults.out
-	gcov dominion.c >> randomtestresults.out
+	./randomTest1 >> unittestresults.out
+	gcov dominion.c >> unittestresults.out
+	#gcc -o randomTest2 dominion.c rngs.o randomtestcard2.c $(CFLAGS)
+	#./randomTest2 >> unittestresults.out
+	#gcov dominion.c >> unittestresults.out
+	echo -e "End Test Suite on Dominion\n" >> unittestresults.out
 
 clean:
 	rm -f *.o playdom.exe playdom player player.exe  *.gcov *.gcda *.gcno *.so *.out testDrawCard testDrawCard.exe

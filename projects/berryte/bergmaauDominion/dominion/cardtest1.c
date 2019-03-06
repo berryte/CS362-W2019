@@ -19,13 +19,14 @@
 int main(){
 	//variables for the game setup
 	int player = 0; //first player
-	int temp[MAX_HAND]; //temprarily stores the players hand to later discard
+	//int temp[MAX_HAND]; //temprarily stores the players hand to later discard
 	struct gameState game, testGame;
 	int numPlayers = 2;
 	int seed = 1000;
 	int cards[10] = {adventurer, smithy, council_room, mine, village, embargo, cutpurse, steward, remodel, feast}; 
 	//start the game
 	int game1 = initializeGame(numPlayers, cards, seed, &game);
+	game.whoseTurn = player;
 	memcpy(&testGame, &game, sizeof(struct gameState)); //copy to testing struct
 	assert(game1 == 0);
 
@@ -46,7 +47,9 @@ int main(){
         }
 	int deckPrev = testGame.deckCount[player];
 	int handPrev = testGame.handCount[player];
-	playAdventurer(&testGame, player, temp);
+	
+	adventurerEffect(&testGame);
+
 	int deck = testGame.deckCount[player];
 	int diff = deckPrev - deck;
         printf("Previous Deck:%d  Post Deck:%d\n", deckPrev, deck);
@@ -85,7 +88,7 @@ int main(){
         }
 
 	printf("\nTest 3: No Change if No Treasure is Deck\n");
-	playAdventurer(&testGame, player, temp);
+	adventurerEffect(&testGame);
 	int tCards3 = 0;
         for(i = 0; i < testGame.handCount[player]; i++){
                 if(testGame.hand[player][i] == copper || testGame.hand[player][i] == silver || testGame.hand[player][i] == gold){

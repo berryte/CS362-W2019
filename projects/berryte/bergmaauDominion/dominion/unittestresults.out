@@ -1,0 +1,3363 @@
+Running Test Suite on Dominion...
+
+
+------------ Testing InitializeGame Function -------------
+
+
+Test 1: Number of Players
+Testing -5 Players
+Test Pass
+
+Testing 0 Players
+Test Pass
+
+Testing 1 Player
+Test Pass
+
+Testing 2 Players
+Test Pass
+
+Testing 3 Players
+Test Pass
+
+Testing 4 Players
+Test Pass
+
+Testing 5 Players
+Test Pass
+
+Test 2: Dominion cards
+Testing with Duplicate Cards
+Test Pass
+
+Test 3: Seed Testing
+Testing with Negative Seed
+Bug Found
+
+--- Testing Complete for InitializeGame Function ---
+
+File 'dominion.c'
+Lines executed:16.73% of 568
+Creating 'dominion.c.gcov'
+
+
+------------ Testing isGameOver Function -------------
+
+
+Test 1: Negative Province Count
+Bug Found
+
+Test 2: Zero Province Count
+Test Pass
+
+Test 3: Supplies are above 0
+Test Pass
+
+Test 4: 3 Supplies are under 0
+Bug Found
+
+Test 5: 3 Supplies are at 0
+Test Pass
+
+--- Testing Complete for isGameOver Function ---
+
+File 'dominion.c'
+Lines executed:17.08% of 568
+Creating 'dominion.c.gcov'
+
+
+------------ Testing getCost Function -------------
+
+
+Test 1: Negative Number
+Test Pass
+
+Test 2: Copper Card
+Test Pass
+
+Test 3: High Positive Number
+Test Pass
+
+--- Testing Complete for getCost Function ---
+
+File 'dominion.c'
+Lines executed:0.70% of 568
+Creating 'dominion.c.gcov'
+
+
+------------ Testing UpdateCoins Function -------------
+
+
+Test 1: Negative Bonus
+Bug Found
+
+Test 2: Play Copper + Bonus of 2
+Test Pass
+
+Test 3: Play Gold Without Bonus
+Test Pass
+
+--- Testing Complete for UpdateCoins Function ---
+
+File 'dominion.c'
+Lines executed:15.49% of 568
+Creating 'dominion.c.gcov'
+
+
+------------ Testing Adventurer Card Function -------------
+
+Test 1: Verify 2 Cards Added to Hand and Removed from Deck
+Previous Deck:5  Post Deck:4
+Previous Hand:5 Post Hand:6
+Bug Found
+
+Test 2: 2 Treasure Cards Added to Hand
+Treasure Cards in Hand before Adventurer: 4
+Treasure Cards in Hand after Adventurer: 5
+Treasure Cards in Deck before Adventurer: 3
+Treasure Cards in Deck after Adventurer: 2
+Bug Found
+
+Test 3: No Change if No Treasure is Deck
+Treasure Cards in Hand before Adventurer: 5
+Treasure Cards in Hand after Adventurer: 6
+Treasure Cards in Deck before Adventurer: 2
+Treasure Cards in Deck after Adventurer: 1
+Bug Found
+
+------------ Finished Testing Adventurer Card Function -------------
+File 'dominion.c'
+Lines executed:17.78% of 568
+Creating 'dominion.c.gcov'
+
+
+------------ Testing Smithy Card Function -------------
+
+Test 1: Verify that only 3 Cards were Drawn
+Bug Found
+
+Test 2: Discard to Increment by 1
+Bug Found
+
+Test 3: Verify Smithy is Discarded
+Bug Found
+
+------------ Finished Testing Smithy Card Function -------------
+File 'dominion.c'
+Lines executed:20.42% of 568
+Creating 'dominion.c.gcov'
+
+
+------------ Testing Random Adventurer Card Function -------------
+
+Test 1:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 2:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 3:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Sucessful!
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -4 added to Hand.
+
+Test 4:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 5:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -2 added to Hand.
+
+Test 6:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 7:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 8:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -4 added to Hand.
+
+Test 9:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Sucessful!
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -10 added to Hand.
+
+Test 10:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 11:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 12:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 13:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 14:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 15:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 16:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -3 added to Hand.
+
+Test 17:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Sucessful!
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -9 added to Hand.
+
+Test 18:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 19:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 20:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -3 added to Hand.
+
+Test 21:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -3 added to Hand.
+
+Test 22:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 23:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 24:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 25:
+	Test: Only 1 Treasure card outside of hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 0 (Added 1 Treasure Cards - Discard Adventurer)
+		Test Failed. 1 added to Hand.
+
+Test 26:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 27:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -3 added to Hand.
+
+Test 28:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 29:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 30:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -7 added to Hand.
+
+Test 31:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 32:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -2 added to Hand.
+
+Test 33:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -7 added to Hand.
+
+Test 34:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -3 added to Hand.
+
+Test 35:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -2 added to Hand.
+
+Test 36:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 37:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Sucessful!
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -4 added to Hand.
+
+Test 38:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -5 added to Hand.
+
+Test 39:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 40:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 41:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 42:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 43:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -8 added to Hand.
+
+Test 44:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 45:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 46:
+	Test: Only 1 Treasure card outside of hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 0 (Added 1 Treasure Cards - Discard Adventurer)
+		Test Failed. 1 added to Hand.
+
+Test 47:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. 0 added to Hand.
+
+Test 48:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 49:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -3 added to Hand.
+
+Test 50:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Sucessful!
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -9 added to Hand.
+
+Test 51:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -2 added to Hand.
+
+Test 52:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -2 added to Hand.
+
+Test 53:
+	Test: Only 1 Treasure card outside of hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 0 (Added 1 Treasure Cards - Discard Adventurer)
+		Test Failed. 1 added to Hand.
+
+Test 54:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 55:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -3 added to Hand.
+
+Test 56:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -2 added to Hand.
+
+Test 57:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 58:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -3 added to Hand.
+
+Test 59:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -3 added to Hand.
+
+Test 60:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 61:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 62:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -6 added to Hand.
+
+Test 63:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 64:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 65:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -3 added to Hand.
+
+Test 66:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 67:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -3 added to Hand.
+
+Test 68:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -3 added to Hand.
+
+Test 69:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -6 added to Hand.
+
+Test 70:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 71:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 72:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. 0 added to Hand.
+
+Test 73:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 74:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 75:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 76:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 77:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -2 added to Hand.
+
+Test 78:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Sucessful!
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -10 added to Hand.
+
+Test 79:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -3 added to Hand.
+
+Test 80:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 81:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Sucessful!
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -4 added to Hand.
+
+Test 82:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 83:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 84:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 85:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 86:
+	Test: Only 1 Treasure card outside of hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 0 (Added 1 Treasure Cards - Discard Adventurer)
+		Test Failed. 1 added to Hand.
+
+Test 87:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Sucessful!
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -9 added to Hand.
+
+Test 88:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -3 added to Hand.
+
+Test 89:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -2 added to Hand.
+
+Test 90:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. 0 added to Hand.
+
+Test 91:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 92:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 93:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Sucessful!
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -7 added to Hand.
+
+Test 94:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -2 added to Hand.
+
+Test 95:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. 0 added to Hand.
+
+Test 96:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -3 added to Hand.
+
+Test 97:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 98:
+	Test: Only 1 Treasure card outside of hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 0 (Added 1 Treasure Cards - Discard Adventurer)
+		Test Failed. 1 added to Hand.
+
+Test 99:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 100:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. 0 added to Hand.
+
+Test 101:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. 0 added to Hand.
+
+Test 102:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 103:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 104:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -3 added to Hand.
+
+Test 105:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -3 added to Hand.
+
+Test 106:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -6 added to Hand.
+
+Test 107:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 108:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 109:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 110:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 111:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 112:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 113:
+	Test: Only 1 Treasure card outside of hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 0 (Added 1 Treasure Cards - Discard Adventurer)
+		Test Failed. 1 added to Hand.
+
+Test 114:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 115:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 116:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Sucessful!
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -11 added to Hand.
+
+Test 117:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -2 added to Hand.
+
+Test 118:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -4 added to Hand.
+
+Test 119:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -2 added to Hand.
+
+Test 120:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 121:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -3 added to Hand.
+
+Test 122:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. 0 added to Hand.
+
+Test 123:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 124:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 125:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 126:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 127:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Sucessful!
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -5 added to Hand.
+
+Test 128:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Sucessful!
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -7 added to Hand.
+
+Test 129:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 130:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 131:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -3 added to Hand.
+
+Test 132:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Sucessful!
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -11 added to Hand.
+
+Test 133:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -7 added to Hand.
+
+Test 134:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 135:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -4 added to Hand.
+
+Test 136:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 137:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 138:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -3 added to Hand.
+
+Test 139:
+	Test: Only 1 Treasure card outside of hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 0 (Added 1 Treasure Cards - Discard Adventurer)
+		Test Failed. 1 added to Hand.
+
+Test 140:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 141:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -3 added to Hand.
+
+Test 142:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 143:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 144:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 145:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. 0 added to Hand.
+
+Test 146:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 147:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -5 added to Hand.
+
+Test 148:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Sucessful!
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -10 added to Hand.
+
+Test 149:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 150:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 151:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Sucessful!
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -11 added to Hand.
+
+Test 152:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -5 added to Hand.
+
+Test 153:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 154:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 155:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -4 added to Hand.
+
+Test 156:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 157:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 158:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. 0 added to Hand.
+
+Test 159:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Sucessful!
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -9 added to Hand.
+
+Test 160:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 161:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 162:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -2 added to Hand.
+
+Test 163:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 164:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 165:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 166:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Sucessful!
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -6 added to Hand.
+
+Test 167:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 168:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Sucessful!
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -5 added to Hand.
+
+Test 169:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 170:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. 0 added to Hand.
+
+Test 171:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. 0 added to Hand.
+
+Test 172:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -6 added to Hand.
+
+Test 173:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 174:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Sucessful!
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -9 added to Hand.
+
+Test 175:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 176:
+	Test: Only 1 Treasure card outside of hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 0 (Added 1 Treasure Cards - Discard Adventurer)
+		Test Failed. 1 added to Hand.
+
+Test 177:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 178:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -8 added to Hand.
+
+Test 179:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 180:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 181:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. 0 added to Hand.
+
+Test 182:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -5 added to Hand.
+
+Test 183:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 184:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 185:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 186:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -3 added to Hand.
+
+Test 187:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -7 added to Hand.
+
+Test 188:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 189:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 190:
+	Test: Only 1 Treasure card outside of hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 0 (Added 1 Treasure Cards - Discard Adventurer)
+		Test Failed. 1 added to Hand.
+
+Test 191:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 192:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 193:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 194:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 195:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 196:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 197:
+	Test: 2 Treasure cards added to hand
+		Test Failed. 1 Treasure cards were added to the hand.
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Increased by 1 (Added 2 Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 198:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Sucessful!
+
+Test 199:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Failed.  Adventurer card still in Hand
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -4 added to Hand.
+
+Test 200:
+	Test: No More Treasure Cards to add to hand
+		Test Successful!
+	Test: Adventurer Card was Discarded
+		Test Sucessful!
+	Test: Overall Hand Count Decreased by -1 (No Treasure Cards - Discard Adventurer)
+		Test Failed. -11 added to Hand.
+File 'dominion.c'
+Lines executed:22.71% of 568
+Creating 'dominion.c.gcov'
+
+
+------------ Testing Random Smithy Card Function -------------
+
+Test 1:
+	Test: 3 cards removed from Deck
+		Test Failed. 0 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 2:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 0 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 3:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 1 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 4:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 5:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 6:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 7:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 0 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 8:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. -1 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 9:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Successful!
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 10:
+	Test: 3 cards removed from Deck
+		Test Failed. After shuffle, deck count is 1.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 11:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. -1 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 12:
+	Test: 3 cards removed from Deck
+		Test Failed. 1 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 13:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 0 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 14:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 0 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 15:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. -1 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 16:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 17:
+	Test: 3 cards removed from Deck
+		Test Failed. After shuffle, deck count is 3.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 18:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 0 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 19:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 20:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 1 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 21:
+	Test: 3 cards removed from Deck
+		Test Failed. 1 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 22:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 1 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 23:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 24:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 1 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 25:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 1 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 26:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. -1 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 27:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 28:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 29:
+	Test: 3 cards removed from Deck
+		Test Failed. After shuffle, deck count is 1.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 30:
+	Test: 3 cards removed from Deck
+		Test Failed. After shuffle, deck count is 2.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 31:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 32:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 33:
+	Test: 3 cards removed from Deck
+		Test Failed. After shuffle, deck count is 4.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 34:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 35:
+	Test: 3 cards removed from Deck
+		Test Failed. After shuffle, deck count is 3.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 36:
+	Test: 3 cards removed from Deck
+		Test Failed. After shuffle, deck count is 4.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 37:
+	Test: 3 cards removed from Deck
+		Test Failed. After shuffle, deck count is 5.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 38:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Successful!
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 39:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 40:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 1 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 41:
+	Test: 3 cards removed from Deck
+		Test Failed. After shuffle, deck count is 1.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 42:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Successful!
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 43:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 1 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 44:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 0 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 45:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 46:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 47:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 48:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. -1 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 49:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 0 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 50:
+	Test: 3 cards removed from Deck
+		Test Failed. 2 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 51:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. -1 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 52:
+	Test: 3 cards removed from Deck
+		Test Failed. After shuffle, deck count is 0.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 53:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 1 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 54:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 55:
+	Test: 3 cards removed from Deck
+		Test Failed. After shuffle, deck count is 3.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 56:
+	Test: 3 cards removed from Deck
+		Test Failed. -2 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 57:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Successful!
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 58:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 59:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 0 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 60:
+	Test: 3 cards removed from Deck
+		Test Failed. After shuffle, deck count is 2.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 61:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 62:
+	Test: 3 cards removed from Deck
+		Test Failed. After shuffle, deck count is 0.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 63:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 64:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. -1 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 65:
+	Test: 3 cards removed from Deck
+		Test Failed. 0 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 66:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 1 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 67:
+	Test: 3 cards removed from Deck
+		Test Failed. 2 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 68:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 0 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 69:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 70:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 71:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Successful!
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 72:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 73:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 74:
+	Test: 3 cards removed from Deck
+		Test Failed. 0 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 75:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 76:
+	Test: 3 cards removed from Deck
+		Test Failed. After shuffle, deck count is 0.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 77:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 0 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 78:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 79:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 80:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 81:
+	Test: 3 cards removed from Deck
+		Test Failed. After shuffle, deck count is 2.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 82:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Successful!
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 83:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 0 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 84:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 85:
+	Test: 3 cards removed from Deck
+		Test Failed. After shuffle, deck count is 2.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 86:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. -1 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 87:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 88:
+	Test: 3 cards removed from Deck
+		Test Failed. After shuffle, deck count is 1.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 89:
+	Test: 3 cards removed from Deck
+		Test Failed. After shuffle, deck count is 0.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 90:
+	Test: 3 cards removed from Deck
+		Test Failed. After shuffle, deck count is 3.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 91:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 1 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 92:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 1 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 93:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 94:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 95:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 96:
+	Test: 3 cards removed from Deck
+		Test Failed. After shuffle, deck count is 2.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 97:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. -1 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 98:
+	Test: 3 cards removed from Deck
+		Test Failed. After shuffle, deck count is 5.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 99:
+	Test: 3 cards removed from Deck
+		Test Failed. After shuffle, deck count is 0.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 100:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Successful!
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 101:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 102:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. -1 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 103:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 1 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 104:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 0 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 105:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 106:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 1 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 107:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 0 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 108:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 109:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 110:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. -1 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 111:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 112:
+	Test: 3 cards removed from Deck
+		Test Failed. After shuffle, deck count is 2.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 113:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 1 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 114:
+	Test: 3 cards removed from Deck
+		Test Failed. After shuffle, deck count is 4.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 115:
+	Test: 3 cards removed from Deck
+		Test Failed. After shuffle, deck count is 1.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 116:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 117:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 1 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 118:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 1 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 119:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 0 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 120:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. -1 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 121:
+	Test: 3 cards removed from Deck
+		Test Failed. After shuffle, deck count is 3.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 122:
+	Test: 3 cards removed from Deck
+		Test Failed. After shuffle, deck count is 2.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 123:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. -1 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 124:
+	Test: 3 cards removed from Deck
+		Test Failed. 2 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 125:
+	Test: 3 cards removed from Deck
+		Test Failed. After shuffle, deck count is 2.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 126:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 0 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 127:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 128:
+	Test: 3 cards removed from Deck
+		Test Failed. After shuffle, deck count is 0.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 129:
+	Test: 3 cards removed from Deck
+		Test Failed. After shuffle, deck count is 4.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 130:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 1 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 131:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 0 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 132:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 133:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 134:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. -1 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 135:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 136:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 137:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 138:
+	Test: 3 cards removed from Deck
+		Test Failed. After shuffle, deck count is 1.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 139:
+	Test: 3 cards removed from Deck
+		Test Failed. After shuffle, deck count is 0.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 140:
+	Test: 3 cards removed from Deck
+		Test Failed. After shuffle, deck count is 2.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 141:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 142:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 1 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 143:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 144:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Successful!
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 145:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 146:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 147:
+	Test: 3 cards removed from Deck
+		Test Failed. 2 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 148:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Successful!
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 149:
+	Test: 3 cards removed from Deck
+		Test Failed. After shuffle, deck count is 5.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 150:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 0 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 151:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Successful!
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 152:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 153:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. -1 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 154:
+	Test: 3 cards removed from Deck
+		Test Failed. After shuffle, deck count is 5.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 155:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 0 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 156:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 157:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 1 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 158:
+	Test: 3 cards removed from Deck
+		Test Failed. After shuffle, deck count is 2.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 159:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 1 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 160:
+	Test: 3 cards removed from Deck
+		Test Failed. After shuffle, deck count is 1.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 161:
+	Test: 3 cards removed from Deck
+		Test Failed. After shuffle, deck count is 4.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 162:
+	Test: 3 cards removed from Deck
+		Test Failed. -1 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 163:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Successful!
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 164:
+	Test: 3 cards removed from Deck
+		Test Failed. 0 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 165:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 166:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 167:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. -1 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 168:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 169:
+	Test: 3 cards removed from Deck
+		Test Failed. 1 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 170:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 171:
+	Test: 3 cards removed from Deck
+		Test Failed. After shuffle, deck count is 0.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 172:
+	Test: 3 cards removed from Deck
+		Test Failed. After shuffle, deck count is 4.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 173:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 174:
+	Test: 3 cards removed from Deck
+		Test Failed. After shuffle, deck count is 4.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 175:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. -1 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 176:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Successful!
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 177:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 1 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 178:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 179:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Successful!
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 180:
+	Test: 3 cards removed from Deck
+		Test Failed. After shuffle, deck count is 1.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 181:
+	Test: 3 cards removed from Deck
+		Test Failed. After shuffle, deck count is 0.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 182:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 0 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 183:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. -1 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 184:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 185:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 186:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 187:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 188:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 189:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 190:
+	Test: 3 cards removed from Deck
+		Test Failed. 4 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 191:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 0 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 192:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Successful!
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 193:
+	Test: 3 cards removed from Deck
+		Test Failed. After shuffle, deck count is 2.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 194:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Successful!
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 195:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. -1 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 196:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+
+Test 197:
+	Test: 3 cards removed from Deck
+		Test Failed. After shuffle, deck count is 5.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 198:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. -1 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 199:
+	Test: 3 cards removed from Deck
+		Test Successful!
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 0 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy was discarded incorrectly.
+
+Test 200:
+	Test: 3 cards removed from Deck
+		Test Failed. 0 removed from deck.
+	Test: Hand Count Increased by 2. (Draw 3 - Discard Smithy)
+		Test Failed. 3 added to hand.
+	Test: Smithy is discarded
+		Test Failed. Smithy is still in hand.
+File 'dominion.c'
+Lines executed:22.36% of 568
+Creating 'dominion.c.gcov'
+
+End Test Suite on Dominion
+
