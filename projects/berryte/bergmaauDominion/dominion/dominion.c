@@ -649,7 +649,7 @@ int adventurerEffect (struct gameState *state) {
 	int currentPlayer = whoseTurn(state);
 	int temphand[MAX_HAND];
 	int z = 0;
-	while(drawntreasure<1){
+	while(drawntreasure<2){ //Fixed bug!  Finds 2 treasure cards instead of 1
 		if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
 	  		shuffle(currentPlayer, state);
 		}
@@ -680,7 +680,7 @@ int smithyEffect (struct gameState *state, int handPos) {
 	 //
       	int currentPlayer = whoseTurn(state);
 	int i;
-	for (i = 0; i < 4; i++)
+	for (i = 0; i < 3; i++)//Fixed bug! Changed from 4 to 3 cards
 	{
 	  drawCard(currentPlayer, state);
 	}
