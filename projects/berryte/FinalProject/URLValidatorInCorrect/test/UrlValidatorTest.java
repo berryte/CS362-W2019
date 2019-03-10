@@ -153,8 +153,6 @@ public class UrlValidatorTest extends TestCase {
            result("http://zzz.oregonstate.edu", 1);
            i++;
 
-
-	   
 	   System.out.print("\nManual Testing Completed!\n"); //end Manaul testing
    }
    
