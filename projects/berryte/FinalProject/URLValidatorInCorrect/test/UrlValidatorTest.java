@@ -143,6 +143,17 @@ public class UrlValidatorTest extends TestCase {
 	   System.out.print("Test " + i + ": ");
 	   result("http://1.2.3.4.com", 0); //worked in the other url validator
 	   i++;
+	   System.out.print("Test " + i + ": ");
+           result("htp://hello.com", 1);
+           i++;
+	   System.out.print("Test " + i + ": ");
+           result("http://wwww.oregonstate.edu", 1);
+           i++;
+           System.out.print("Test " + i + ": ");
+           result("http://zzz.oregonstate.edu", 1);
+           i++;
+
+
 	   
 	   System.out.print("\nManual Testing Completed!\n"); //end Manaul testing
    }
